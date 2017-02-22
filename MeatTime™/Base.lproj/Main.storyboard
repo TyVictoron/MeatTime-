@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Meat Selection-->
         <scene sceneID="m0g-54-hkY">
             <objects>
-                <viewController id="MUS-cj-DJo" sceneMemberID="viewController">
+                <viewController id="MUS-cj-DJo" customClass="MeatSelection" customModule="MeatTime_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G78-gB-11f"/>
                         <viewControllerLayoutGuide type="bottom" id="Bz8-8T-z1E"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="865" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer Instruction View-->
         <scene sceneID="blj-uz-XoV">
             <objects>
-                <viewController id="lqK-1v-ZVf" sceneMemberID="viewController">
+                <viewController id="lqK-1v-ZVf" customClass="TimerInstructionView" customModule="MeatTime_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gy7-iC-txP"/>
                         <viewControllerLayoutGuide type="bottom" id="eju-jM-HxQ"/>

@@ -54,6 +54,9 @@
 		10A3BC481E5D4E540046669A /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BC1A1E5D4E540046669A /* iTunesArtwork@2x.png */; };
 		10A3BC491E5D4E540046669A /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BC1B1E5D4E540046669A /* iTunesArtwork@3x.png */; };
 		10A3BC4A1E5D4E540046669A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BC1C1E5D4E540046669A /* README.md */; };
+		D00F81221E5DE7C600E23AC1 /* MeatLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */; };
+		D00F81241E5DE82A00E23AC1 /* MeatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */; };
+		D00F81261E5DE84800E23AC1 /* TimerInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,9 @@
 		10A3BC1A1E5D4E540046669A /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		10A3BC1B1E5D4E540046669A /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		10A3BC1C1E5D4E540046669A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatLocker.swift; sourceTree = "<group>"; };
+		D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatSelection.swift; sourceTree = "<group>"; };
+		D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInstructionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,9 @@
 			children = (
 				10A3BBB31E5C9B040046669A /* AppDelegate.swift */,
 				10A3BBB51E5C9B040046669A /* ViewController.swift */,
+				D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */,
+				D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */,
+				D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */,
 				10A3BBB71E5C9B050046669A /* Main.storyboard */,
 				10A3BBBD1E5C9B060046669A /* Assets.xcassets */,
 				10A3BBBF1E5C9B060046669A /* LaunchScreen.storyboard */,
@@ -453,8 +462,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00F81221E5DE7C600E23AC1 /* MeatLocker.swift in Sources */,
 				10A3BBB61E5C9B040046669A /* ViewController.swift in Sources */,
+				D00F81261E5DE84800E23AC1 /* TimerInstructionView.swift in Sources */,
 				10A3BBBC1E5C9B050046669A /* MeatTime_.xcdatamodeld in Sources */,
+				D00F81241E5DE82A00E23AC1 /* MeatSelection.swift in Sources */,
 				10A3BC4A1E5D4E540046669A /* README.md in Sources */,
 				10A3BBB41E5C9B040046669A /* AppDelegate.swift in Sources */,
 			);
