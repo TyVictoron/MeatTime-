@@ -8,12 +8,16 @@
 
 import UIKit
 
-class MeatSelection: UIViewController {
-
+class MeatSelection: UIViewController
+{
     @IBOutlet weak var labelLabel: UILabel!
+    
     var label = ""
     
-    override func viewDidLoad() {
+    var meatLockerObject = MeatLocker()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         labelLabel.text = label
     }

@@ -10,26 +10,29 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    var nextLabel = ""
-
+    var meatLockerObject = MeatLocker()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
     
-    @IBAction func grillin(_ sender: Any) {
-        nextLabel = "Grillin'"
+    @IBAction func grillin(_ sender: Any)
+    {
+        
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ToMeatVC") as! MeatSelection
+        vc.meatLockerObject = self.meatLockerObject
+        self.present(vc, animated: true, completion: nil)
     }
     
-    @IBAction func smokin(_ sender: Any) {
-        nextLabel = "Smokin'"
-    }
-    
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        if (identifier == "ToMeatVC") {
-            let mvc = self.storyboard?.instantiateViewController(withIdentifier: "MeatVC") as! MeatSelection
-            mvc.label = nextLabel
-        }
+    @IBAction func smokin(_ sender: Any)
+    {
+        
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ToMeatVC") as! MeatSelection
+        vc.meatLockerObject = self.meatLockerObject
+        self.present(vc, animated: true, completion: nil)
     }
 }
 

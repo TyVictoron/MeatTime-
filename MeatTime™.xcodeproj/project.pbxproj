@@ -355,7 +355,7 @@
 				TargetAttributes = {
 					10A3BBAF1E5C9B030046669A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = SS74D43GDA;
+						DevelopmentTeam = VG5C2F796N;
 						ProvisioningStyle = Automatic;
 					};
 					10A3BBC61E5C9B080046669A = {
@@ -620,8 +620,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SS74D43GDA;
+				DEVELOPMENT_TEAM = VG5C2F796N;
 				INFOPLIST_FILE = "MeatTime™/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ty-and-Ler-.MeatTime-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -633,8 +634,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SS74D43GDA;
+				DEVELOPMENT_TEAM = VG5C2F796N;
 				INFOPLIST_FILE = "MeatTime™/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ty-and-Ler-.MeatTime-";
 				PRODUCT_NAME = "$(TARGET_NAME)";

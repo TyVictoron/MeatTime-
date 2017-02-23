@@ -8,12 +8,10 @@
 
 import UIKit
 
-class TimerInstructionView: UIViewController {
-
-    override func viewDidLoad() {
+class TimerInstructionView: UIViewController
+{
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
 }
