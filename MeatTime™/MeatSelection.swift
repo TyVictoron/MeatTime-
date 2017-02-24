@@ -10,15 +10,16 @@ import UIKit
 
 class MeatSelection: UIViewController
 {
-    @IBOutlet weak var labelLabel: UILabel!
+    @IBOutlet weak var labelLabel: UILabel! //top label
     
-    var label = ""
+    @IBOutlet weak var MeatWheelBottom: UIPickerView!
+    @IBOutlet weak var MeatWheelTop: UIPickerView!
     
     var meatLockerObject = MeatLocker()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        labelLabel.text = label
+        labelLabel.text = meatLockerObject.cookingStyle        
     }
 }

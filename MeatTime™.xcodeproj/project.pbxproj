@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10A3BBB41E5C9B040046669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBB31E5C9B040046669A /* AppDelegate.swift */; };
 		10A3BBB61E5C9B040046669A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBB51E5C9B040046669A /* ViewController.swift */; };
-		10A3BBB91E5C9B050046669A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BBB71E5C9B050046669A /* Main.storyboard */; };
 		10A3BBBC1E5C9B050046669A /* MeatTime_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBBA1E5C9B050046669A /* MeatTime_.xcdatamodeld */; };
 		10A3BBBE1E5C9B060046669A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BBBD1E5C9B060046669A /* Assets.xcassets */; };
 		10A3BBC11E5C9B060046669A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BBBF1E5C9B060046669A /* LaunchScreen.storyboard */; };
@@ -57,6 +56,9 @@
 		D00F81221E5DE7C600E23AC1 /* MeatLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */; };
 		D00F81241E5DE82A00E23AC1 /* MeatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */; };
 		D00F81261E5DE84800E23AC1 /* TimerInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */; };
+		D04F02DA1E60886C00478ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F02D91E60886C00478ED7 /* Main.storyboard */; };
+		D04F02DB1E60886C00478ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F02D91E60886C00478ED7 /* Main.storyboard */; };
+		D04F02DC1E60886C00478ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F02D91E60886C00478ED7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +82,6 @@
 		10A3BBB01E5C9B030046669A /* MeatTime™.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeatTime™.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A3BBB31E5C9B040046669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A3BBB51E5C9B040046669A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10A3BBB81E5C9B050046669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10A3BBBB1E5C9B050046669A /* MeatTime_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeatTime_.xcdatamodel; sourceTree = "<group>"; };
 		10A3BBBD1E5C9B060046669A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A3BBC01E5C9B060046669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 		D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatLocker.swift; sourceTree = "<group>"; };
 		D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatSelection.swift; sourceTree = "<group>"; };
 		D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInstructionView.swift; sourceTree = "<group>"; };
+		D04F02D91E60886C00478ED7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +191,7 @@
 				D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */,
 				D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */,
 				D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */,
-				10A3BBB71E5C9B050046669A /* Main.storyboard */,
+				D04F02D91E60886C00478ED7 /* Main.storyboard */,
 				10A3BBBD1E5C9B060046669A /* Assets.xcassets */,
 				10A3BBBF1E5C9B060046669A /* LaunchScreen.storyboard */,
 				10A3BBC21E5C9B060046669A /* Info.plist */,
@@ -399,6 +401,7 @@
 			files = (
 				10A3BC2F1E5D4E540046669A /* icon-messages-transcript-32x24@3x.png in Resources */,
 				10A3BBC11E5C9B060046669A /* LaunchScreen.storyboard in Resources */,
+				D04F02DA1E60886C00478ED7 /* Main.storyboard in Resources */,
 				10A3BC3A1E5D4E540046669A /* Icon-App-57x57@1x.png in Resources */,
 				10A3BC291E5D4E540046669A /* icon-messages-app-iPhone-60x45@1x.png in Resources */,
 				10A3BC491E5D4E540046669A /* iTunesArtwork@3x.png in Resources */,
@@ -411,7 +414,6 @@
 				10A3BBBE1E5C9B060046669A /* Assets.xcassets in Resources */,
 				10A3BC2A1E5D4E540046669A /* icon-messages-app-iPhone-60x45@2x.png in Resources */,
 				10A3BC3E1E5D4E540046669A /* Icon-App-60x60@3x.png in Resources */,
-				10A3BBB91E5C9B050046669A /* Main.storyboard in Resources */,
 				10A3BC241E5D4E540046669A /* icon-messages-app-27x20@1x.png in Resources */,
 				10A3BC2D1E5D4E540046669A /* icon-messages-transcript-32x24@1x.png in Resources */,
 				10A3BC401E5D4E540046669A /* Icon-App-72x72@2x.png in Resources */,
@@ -445,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04F02DB1E60886C00478ED7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04F02DC1E60886C00478ED7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,14 +508,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		10A3BBB71E5C9B050046669A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10A3BBB81E5C9B050046669A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		10A3BBBF1E5C9B060046669A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

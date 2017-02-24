@@ -19,18 +19,19 @@ class ViewController: UIViewController
     
     @IBAction func grillin(_ sender: Any)
     {
-        
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ToMeatVC") as! MeatSelection
-        vc.meatLockerObject = self.meatLockerObject
-        self.present(vc, animated: true, completion: nil)
+        meatLockerObject.cookingStyle = "Grillin'"
+        nextViewController()
     }
     
-    @IBAction func smokin(_ sender: Any)
+    @IBAction func smokin(_ sender: UIButton)
     {
-        
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ToMeatVC") as! MeatSelection
+        meatLockerObject.cookingStyle = "Smokin'"
+        nextViewController()    
+    }
+    
+    func nextViewController()
+    {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MeatVC") as! MeatSelection
         vc.meatLockerObject = self.meatLockerObject
         self.present(vc, animated: true, completion: nil)
     }

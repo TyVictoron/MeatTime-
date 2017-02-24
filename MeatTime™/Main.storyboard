@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,22 +23,20 @@
                                     <constraint firstAttribute="height" constant="128" id="QLE-g3-3Eb"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAv-1a-dPG">
-                                <frame key="frameInset" minX="150" minY="520" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Smokin'"/>
-                                <connections>
-                                    <action selector="smokin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhT-Tl-5cl"/>
-                                    <segue destination="MUS-cj-DJo" kind="show" identifier="ToMeatVC" id="zKq-qL-P4F"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
                                 <frame key="frameInset" minX="164" minY="259" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Grillin'"/>
                                 <connections>
                                     <action selector="grillin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mID-IZ-qx5"/>
-                                    <segue destination="MUS-cj-DJo" kind="show" identifier="ToMeatVC" id="8Iy-XJ-eGC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-eo-d10">
+                                <frame key="frameInset" minX="159" minY="480" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="smokin"/>
+                                <connections>
+                                    <action selector="smokin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyS-Vk-5bE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="139"/>
+            <point key="canvasLocation" x="28" y="138.98050974512745"/>
         </scene>
         <!--Meat Selection-->
         <scene sceneID="m0g-54-hkY">
@@ -110,6 +107,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="MeatWheelBottom" destination="qe4-E6-zkz" id="MlN-xa-F6t"/>
+                        <outlet property="MeatWheelTop" destination="QK4-SZ-578" id="dfN-ct-gkD"/>
                         <outlet property="labelLabel" destination="LHw-E5-toZ" id="gBa-Ms-rSm"/>
                     </connections>
                 </viewController>
@@ -181,7 +180,4 @@
     <resources>
         <image name="icon-messages-app-store-1024x768.png" width="1024" height="768"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="8Iy-XJ-eGC"/>
-    </inferredMetricsTieBreakers>
 </document>
