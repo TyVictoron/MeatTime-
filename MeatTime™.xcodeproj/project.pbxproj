@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10290C571E63F5D800A374CF /* GrillinButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10290C561E63F5D800A374CF /* GrillinButton.png */; };
+		10290C591E63F97600A374CF /* SmokinButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10290C581E63F97600A374CF /* SmokinButton.png */; };
+		10290C5B1E63FB0000A374CF /* meatTimeInAppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */; };
 		10A3BBB41E5C9B040046669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBB31E5C9B040046669A /* AppDelegate.swift */; };
 		10A3BBB61E5C9B040046669A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBB51E5C9B040046669A /* ViewController.swift */; };
 		10A3BBBC1E5C9B050046669A /* MeatTime_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBBA1E5C9B050046669A /* MeatTime_.xcdatamodeld */; };
@@ -79,6 +82,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10290C561E63F5D800A374CF /* GrillinButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrillinButton.png; path = MEATTIME/GrillinButton.png; sourceTree = "<group>"; };
+		10290C581E63F97600A374CF /* SmokinButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmokinButton.png; sourceTree = "<group>"; };
+		10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meatTimeInAppLogo.png; sourceTree = "<group>"; };
 		10A3BBB01E5C9B030046669A /* MeatTime™.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeatTime™.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A3BBB31E5C9B040046669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A3BBB51E5C9B040046669A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 				10A3BBCA1E5C9B080046669A /* MeatTime™Tests */,
 				10A3BBD51E5C9B080046669A /* MeatTime™UITests */,
 				10A3BBB11E5C9B030046669A /* Products */,
+				10290C581E63F97600A374CF /* SmokinButton.png */,
+				10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */,
+				10290C561E63F5D800A374CF /* GrillinButton.png */,
 				10A3BBE41E5D4E540046669A /* MEATTIMEICONS */,
 			);
 			sourceTree = "<group>";
@@ -406,10 +415,12 @@
 				10A3BC291E5D4E540046669A /* icon-messages-app-iPhone-60x45@1x.png in Resources */,
 				10A3BC491E5D4E540046669A /* iTunesArtwork@3x.png in Resources */,
 				10A3BC271E5D4E540046669A /* icon-messages-app-iPadAir-67x50@2x.png in Resources */,
+				10290C5B1E63FB0000A374CF /* meatTimeInAppLogo.png in Resources */,
 				10A3BC2E1E5D4E540046669A /* icon-messages-transcript-32x24@2x.png in Resources */,
 				10A3BC411E5D4E540046669A /* Icon-App-76x76@1x.png in Resources */,
 				10A3BC251E5D4E540046669A /* icon-messages-app-27x20@2x.png in Resources */,
 				10A3BC351E5D4E540046669A /* Icon-App-29x29@2x.png in Resources */,
+				10290C591E63F97600A374CF /* SmokinButton.png in Resources */,
 				10A3BC431E5D4E540046669A /* Icon-App-76x76@3x.png in Resources */,
 				10A3BBBE1E5C9B060046669A /* Assets.xcassets in Resources */,
 				10A3BC2A1E5D4E540046669A /* icon-messages-app-iPhone-60x45@2x.png in Resources */,
@@ -422,6 +433,7 @@
 				10A3BC441E5D4E540046669A /* Icon-App-83.5x83.5@2x.png in Resources */,
 				10A3BC3B1E5D4E540046669A /* Icon-App-57x57@2x.png in Resources */,
 				10A3BC3F1E5D4E540046669A /* Icon-App-72x72@1x.png in Resources */,
+				10290C571E63F5D800A374CF /* GrillinButton.png in Resources */,
 				10A3BC3D1E5D4E540046669A /* Icon-App-60x60@2x.png in Resources */,
 				10A3BC371E5D4E540046669A /* Icon-App-40x40@1x.png in Resources */,
 				10A3BC461E5D4E540046669A /* Icon-Small-50x50@2x.png in Resources */,

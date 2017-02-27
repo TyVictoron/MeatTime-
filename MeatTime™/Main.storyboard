@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,33 +21,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-messages-app-store-1024x768.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-DR-eE1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meatTimeInAppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-DR-eE1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="QLE-g3-3Eb"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
-                                <frame key="frameInset" minX="164" minY="259" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Grillin'"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
+                                <rect key="frame" x="40" y="212" width="295" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="8zg-Qt-Zbd"/>
+                                </constraints>
+                                <state key="normal" image="GrillinButton.png"/>
                                 <connections>
                                     <action selector="grillin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mID-IZ-qx5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-eo-d10">
-                                <frame key="frameInset" minX="159" minY="480" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="smokin"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-eo-d10">
+                                <rect key="frame" x="40" y="433" width="296" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="hof-Yx-sOO"/>
+                                </constraints>
+                                <state key="normal" image="SmokinButton.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="smokin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyS-Vk-5bE"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lVD-eo-d10" secondAttribute="bottom" constant="121" id="0UF-kd-goN"/>
+                            <constraint firstItem="JZ4-WQ-JxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="4FT-uy-aIa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lVD-eo-d10" secondAttribute="trailing" constant="23" id="BG0-sv-xMg"/>
                             <constraint firstItem="lQ3-DR-eE1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D7j-q8-goB"/>
                             <constraint firstItem="lQ3-DR-eE1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FnB-in-HTT"/>
+                            <constraint firstItem="lVD-eo-d10" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="OJF-dM-xqQ"/>
+                            <constraint firstItem="JZ4-WQ-JxD" firstAttribute="top" secondItem="lQ3-DR-eE1" secondAttribute="bottom" constant="84" id="Uh6-Ef-W1Q"/>
+                            <constraint firstItem="JZ4-WQ-JxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uv4-uF-cLx"/>
+                            <constraint firstItem="lVD-eo-d10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFX-dj-LRj"/>
                             <constraint firstAttribute="trailing" secondItem="lQ3-DR-eE1" secondAttribute="trailing" id="jTk-w8-uYa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JZ4-WQ-JxD" secondAttribute="trailing" constant="24" id="sPQ-AS-7oc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -65,11 +83,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe4-E6-zkz">
-                                <frame key="frameInset" minY="335" height="216"/>
+                                <rect key="frame" x="0.0" y="335" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-ny-RvL">
-                                <frame key="frameInset" minX="164" minY="559" width="46" height="30"/>
+                                <rect key="frame" x="164" y="559" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -77,22 +95,26 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QK4-SZ-578">
-                                <frame key="frameInset" minY="111" height="216"/>
+                                <rect key="frame" x="0.0" y="111" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-d4-fua">
-                                <frame key="frameInset" minX="16" minY="617" width="46" height="30"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-d4-fua">
+                                <rect key="frame" x="16" y="617" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="8Qg-9Z-7xc"/>
+                                </constraints>
+                                <state key="normal" title="&lt; Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="u1d-ca-QXH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-E5-toZ">
+                                <rect key="frame" x="105" y="20" width="165" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="ft8-q7-m41"/>
                                     <constraint firstAttribute="height" constant="21" id="pBM-Rl-wnl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -129,15 +151,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-yA-dPr">
-                                <frame key="frameInset" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
-                                <frame key="frameInset" minY="128" width="195" height="128"/>
+                                <rect key="frame" x="0.0" y="128" width="195" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-5w-Fcu">
-                                <frame key="frameInset" minX="195" minY="128" width="180" height="128"/>
+                                <rect key="frame" x="195" y="128" width="180" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -145,30 +167,37 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
-                                <frame key="frameInset" minY="264" width="375" height="296"/>
+                                <rect key="frame" x="0.0" y="264" width="375" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-ME-0du">
-                                <frame key="frameInset" minX="16" minY="617" width="46" height="30"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-ME-0du">
+                                <rect key="frame" x="16" y="617" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="sLw-gG-ByB"/>
+                                </constraints>
+                                <state key="normal" title="&lt; Back"/>
                                 <connections>
                                     <segue destination="MUS-cj-DJo" kind="show" id="w9K-ba-aPA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
-                                <frame key="frameInset" minX="313" minY="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Ezo-7Y-rih"/>
+                                </constraints>
+                                <state key="normal" title="Show"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="MaT-ME-0du" secondAttribute="bottom" constant="20" id="1PH-Wj-2g6"/>
+                            <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="SAR-zs-Ev1" secondAttribute="bottom" constant="20" id="47l-jF-Sv7"/>
                             <constraint firstItem="MaT-ME-0du" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" id="lEi-XF-lte"/>
+                            <constraint firstItem="SAR-zs-Ev1" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="oBc-pt-qQ7"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -178,6 +207,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-messages-app-store-1024x768.png" width="1024" height="768"/>
+        <image name="GrillinButton.png" width="864" height="360"/>
+        <image name="SmokinButton.png" width="864" height="360"/>
+        <image name="meatTimeInAppLogo.png" width="720" height="360"/>
     </resources>
 </document>

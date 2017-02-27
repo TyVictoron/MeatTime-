@@ -8,6 +8,7 @@
 
 import UIKit
 
+// accesses the web and pulls times and instructions
 class TimerInstructionView: UIViewController
 {
     override func viewDidLoad()
