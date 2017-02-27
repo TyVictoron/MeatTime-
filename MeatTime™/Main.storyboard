@@ -82,21 +82,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe4-E6-zkz">
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe4-E6-zkz">
                                 <rect key="frame" x="0.0" y="335" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-ny-RvL">
-                                <rect key="frame" x="164" y="559" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="lqK-1v-ZVf" kind="show" id="7Ov-8L-TJe"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QK4-SZ-578">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QK4-SZ-578">
                                 <rect key="frame" x="0.0" y="111" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Ecw-fK-CEg"/>
+                                    <constraint firstAttribute="height" constant="216" id="T7z-pA-ctg"/>
+                                </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-d4-fua">
                                 <rect key="frame" x="16" y="617" width="61" height="30"/>
@@ -118,13 +112,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-ny-RvL">
+                                <rect key="frame" x="134" y="559" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PKe-iQ-GBP"/>
+                                    <constraint firstAttribute="width" constant="106" id="epy-5p-TYn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Lets Cook!"/>
+                                <connections>
+                                    <segue destination="lqK-1v-ZVf" kind="show" id="7Ov-8L-TJe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QK4-SZ-578" firstAttribute="top" secondItem="LHw-E5-toZ" secondAttribute="bottom" constant="70" id="5Jk-cg-H9V"/>
+                            <constraint firstItem="C1W-ny-RvL" firstAttribute="centerX" secondItem="Iew-xd-8kd" secondAttribute="centerX" id="ECT-sA-wyB"/>
                             <constraint firstItem="ISE-d4-fua" firstAttribute="leading" secondItem="Iew-xd-8kd" secondAttribute="leadingMargin" id="KKN-wl-eKm"/>
+                            <constraint firstItem="C1W-ny-RvL" firstAttribute="top" secondItem="qe4-E6-zkz" secondAttribute="bottom" constant="8" id="Ocu-iq-HeQ"/>
                             <constraint firstItem="LHw-E5-toZ" firstAttribute="leading" secondItem="Iew-xd-8kd" secondAttribute="leadingMargin" constant="89" id="Y8h-Hf-emd"/>
+                            <constraint firstItem="Bz8-8T-z1E" firstAttribute="top" secondItem="C1W-ny-RvL" secondAttribute="bottom" constant="78" id="nhl-bz-rbe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LHw-E5-toZ" secondAttribute="trailing" constant="89" id="nnP-7q-md4"/>
                             <constraint firstItem="LHw-E5-toZ" firstAttribute="top" secondItem="G78-gB-11f" secondAttribute="bottom" id="pBJ-5t-OGE"/>
+                            <constraint firstItem="QK4-SZ-578" firstAttribute="centerX" secondItem="Iew-xd-8kd" secondAttribute="centerX" id="uUB-aj-xJy"/>
                             <constraint firstItem="Bz8-8T-z1E" firstAttribute="top" secondItem="ISE-d4-fua" secondAttribute="bottom" constant="20" id="yTi-mg-6Wq"/>
                         </constraints>
                     </view>
@@ -158,20 +169,19 @@
                                 <rect key="frame" x="0.0" y="128" width="195" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-5w-Fcu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="&lt; Set Timer Here" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-5w-Fcu">
                                 <rect key="frame" x="195" y="128" width="180" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
-                                <rect key="frame" x="0.0" y="264" width="375" height="296"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
+                                <rect key="frame" x="0.0" y="264" width="375" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <mutableString key="text">1. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do        2. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim          3. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure                               4. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                                         5. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-ME-0du">

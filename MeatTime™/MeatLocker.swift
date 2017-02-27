@@ -10,7 +10,7 @@ import UIKit
 
 class MeatLocker: NSObject
 {
-    var AnimalMeats : [String] = ["","",""]
+    var AnimalMeats : [String] = ["Beef","Chicken","Pork"]
     
     var BeefCuts : [String] = [""]
     var BeefCutTimes : [Int] = []
