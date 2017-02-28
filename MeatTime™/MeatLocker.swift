@@ -16,7 +16,7 @@ class MeatLocker: NSObject
     var BeefCutTimes : [Int] = []
     var BeefInternalTemp : [Int] = []
     
-    var ChickenCuts : [String] = ["tyler cut", "ty cut", "mathean cut"]
+    var ChickenCuts : [String] = ["ctyler cut", "cty cut", "cmathean cut"]
     var ChickenCutsTimes : [Int] = []
     var ChickenInternalTemp : [Int] = []
     

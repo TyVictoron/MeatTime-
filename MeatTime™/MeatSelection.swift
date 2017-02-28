@@ -12,13 +12,12 @@ class MeatSelection: UIViewController,UIPickerViewDataSource,UIPickerViewDelegat
 {
     @available(iOS 2.0, *)
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return contents.count
     }
 
     var contents : [[String]] = []
     @IBOutlet weak var labelLabel: UILabel! //top label
     
-    @IBOutlet weak var MeatWheelBottom: UIPickerView!
     @IBOutlet weak var MeatWheelTop: UIPickerView!
     
     var meatLockerObject = MeatLocker()
@@ -27,25 +26,44 @@ class MeatSelection: UIViewController,UIPickerViewDataSource,UIPickerViewDelegat
     {
         super.viewDidLoad()
         labelLabel.text = meatLockerObject.cookingStyle
+        
         contents = [meatLockerObject.AnimalMeats, meatLockerObject.BeefCuts]
+        
         MeatWheelTop.dataSource = self
+        
         MeatWheelTop.delegate = self
         
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
+        return contents.count
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return meatLockerObject.AnimalMeats.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return meatLockerObject.AnimalMeats[row]
+        return contents[component][row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         labelLabel.text = meatLockerObject.AnimalMeats[row]
+        
+        if (labelLabel.text == "Chicken")
+        {
+        contents = [meatLockerObject.AnimalMeats, meatLockerObject.ChickenCuts]
+        }
+        
+        if (labelLabel.text == "Beef")
+        {
+            contents = [meatLockerObject.AnimalMeats, meatLockerObject.BeefCuts]
+        }
+        
+        if (labelLabel.text == "Pork")
+        {
+            contents = [meatLockerObject.AnimalMeats, meatLockerObject.PorkCuts]
+        }
     }
     
     
