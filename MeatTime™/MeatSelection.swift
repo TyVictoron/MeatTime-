@@ -15,6 +15,7 @@ class MeatSelection: UIViewController,UIPickerViewDataSource,UIPickerViewDelegat
         return 1
     }
 
+    var contents : [[String]] = []
     @IBOutlet weak var labelLabel: UILabel! //top label
     
     @IBOutlet weak var MeatWheelBottom: UIPickerView!
@@ -26,6 +27,7 @@ class MeatSelection: UIViewController,UIPickerViewDataSource,UIPickerViewDelegat
     {
         super.viewDidLoad()
         labelLabel.text = meatLockerObject.cookingStyle
+        contents = [meatLockerObject.AnimalMeats, meatLockerObject.BeefCuts]
         MeatWheelTop.dataSource = self
         MeatWheelTop.delegate = self
         
