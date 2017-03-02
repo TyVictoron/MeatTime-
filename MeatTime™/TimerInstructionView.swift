@@ -11,6 +11,8 @@ import UIKit
 // accesses the web and pulls times and instructions
 class TimerInstructionView: UIViewController
 {
+    var meatLockerObject = MeatLocker()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
