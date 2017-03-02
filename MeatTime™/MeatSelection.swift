@@ -48,21 +48,24 @@ class MeatSelection: UIViewController,UIPickerViewDataSource,UIPickerViewDelegat
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        labelLabel.text = meatLockerObject.AnimalMeats[row]
+        labelLabel.text = meatLockerObject.AnimalMeats[row] + " "
         
         if (labelLabel.text == "Chicken")
         {
-        contents = [meatLockerObject.AnimalMeats, meatLockerObject.ChickenCuts]
+            contents = [meatLockerObject.AnimalMeats, meatLockerObject.ChickenCuts]
+            labelLabel.text! = meatLockerObject.AnimalMeats[0] + " " + meatLockerObject.ChickenCuts[row]
         }
         
         if (labelLabel.text == "Beef")
         {
             contents = [meatLockerObject.AnimalMeats, meatLockerObject.BeefCuts]
+            labelLabel.text! = meatLockerObject.AnimalMeats[1] + " " + meatLockerObject.BeefCuts[row]
         }
         
         if (labelLabel.text == "Pork")
         {
             contents = [meatLockerObject.AnimalMeats, meatLockerObject.PorkCuts]
+            labelLabel.text! = meatLockerObject.AnimalMeats[2] + " " + meatLockerObject.PorkCuts[row]
         }
     }
     
