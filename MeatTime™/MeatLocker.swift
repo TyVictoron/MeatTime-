@@ -26,4 +26,5 @@ class MeatLocker: NSObject
     
     var cookingStyle : String = ""
     var selectedMeat : String = ""
+    var selectedCut : String = ""
 }
