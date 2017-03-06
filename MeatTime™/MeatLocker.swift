@@ -25,6 +25,7 @@ class MeatLocker: NSObject
     var PorkInternalTemp : [Int] = []
     
     var cookingStyle : String = ""
+    
     var selectedMeat : String = ""
     var selectedCut : String = ""
 }

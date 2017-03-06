@@ -8,61 +8,82 @@
 
 import UIKit
 
-class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
+{
     
     @available(iOS 2.0, *)
-    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int
+    {
         return 1
     }
-
 
     @IBOutlet weak var InfoLabel: UILabel!
     @IBOutlet weak var picker: UIPickerView!
+    
     var meatLockerObject = MeatLocker()
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
         picker.delegate = self
         picker.dataSource = self
         
-        InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " (Cut Here)"
+        InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat
     }
 
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
+    {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if (meatLockerObject.selectedMeat == "beef") {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    {
+        if (meatLockerObject.selectedMeat == "beef")
+        {
             return meatLockerObject.BeefCuts.count
-        } else if (meatLockerObject.selectedMeat == "pork") {
+        }
+        else if (meatLockerObject.selectedMeat == "pork")
+        {
             return meatLockerObject.PorkCuts.count
-        } else {
+        }
+        else
+        {
             return meatLockerObject.ChickenCuts.count
         }
         
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if (meatLockerObject.selectedMeat == "beef") {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    {
+        if (meatLockerObject.selectedMeat == "beef")
+        {
             return meatLockerObject.BeefCuts[row]
-        } else if (meatLockerObject.selectedMeat == "pork") {
+        }
+        else if (meatLockerObject.selectedMeat == "pork")
+        {
             return meatLockerObject.PorkCuts[row]
-        } else {
+        }
+        else
+        {
             return meatLockerObject.ChickenCuts[row]
         }
         
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if (meatLockerObject.selectedMeat == "beef") {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        if (meatLockerObject.selectedMeat == "beef")
+        {
             InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " " + meatLockerObject.BeefCuts[row]
-        } else if (meatLockerObject.selectedMeat == "pork") {
+        }
+        else if (meatLockerObject.selectedMeat == "pork")
+        {
             InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " " + meatLockerObject.PorkCuts[row]
-        } else {
+        }
+        else
+        {
             InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " " + meatLockerObject.ChickenCuts[row]
         }
-        
-        
     }
 }
