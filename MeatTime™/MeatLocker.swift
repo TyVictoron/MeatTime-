@@ -16,11 +16,11 @@ class MeatLocker: NSObject
     var BeefCutTimes : [Int] = []
     var BeefInternalTemp : [Int] = []
     
-    var ChickenCuts : [String] = ["chicken1", "chicken1", "chicken1"]
+    var ChickenCuts : [String] = ["chicken1", "chicken2", "chicken3"]
     var ChickenCutsTimes : [Int] = []
     var ChickenInternalTemp : [Int] = []
     
-    var PorkCuts : [String] = ["pork1", "pork1", "pork1"]
+    var PorkCuts : [String] = ["pork1", "pork2", "pork3"]
     var PorkCutTimes : [Int] = []
     var PorkInternalTemp : [Int] = []
     

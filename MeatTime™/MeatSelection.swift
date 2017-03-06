@@ -37,7 +37,7 @@ class MeatSelection: UIViewController
     
     func nextViewController()
     {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "timerPage") as! TimerInstructionView
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "cutVC") as! SelectedCutView
         vc.meatLockerObject = self.meatLockerObject
         self.present(vc, animated: true, completion: nil)
     }

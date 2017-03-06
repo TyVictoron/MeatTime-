@@ -24,6 +24,8 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
+        
+        InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " (Cut Here)"
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -31,14 +33,36 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return meatLockerObject.BeefCuts.count
+        if (meatLockerObject.selectedMeat == "beef") {
+            return meatLockerObject.BeefCuts.count
+        } else if (meatLockerObject.selectedMeat == "pork") {
+            return meatLockerObject.PorkCuts.count
+        } else {
+            return meatLockerObject.ChickenCuts.count
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return meatLockerObject.BeefCuts[row]
+        if (meatLockerObject.selectedMeat == "beef") {
+            return meatLockerObject.BeefCuts[row]
+        } else if (meatLockerObject.selectedMeat == "pork") {
+            return meatLockerObject.PorkCuts[row]
+        } else {
+            return meatLockerObject.ChickenCuts[row]
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        InfoLabel.text! = meatLockerObject.cookingStyle + meatLockerObject.selectedMeat + meatLockerObject.BeefCuts[row]
+        if (meatLockerObject.selectedMeat == "beef") {
+            InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " " + meatLockerObject.BeefCuts[row]
+        } else if (meatLockerObject.selectedMeat == "pork") {
+            InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " " + meatLockerObject.PorkCuts[row]
+        } else {
+            InfoLabel.text! = meatLockerObject.cookingStyle + " " + meatLockerObject.selectedMeat + " " + meatLockerObject.ChickenCuts[row]
+        }
+        
+        
     }
 }

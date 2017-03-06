@@ -105,7 +105,6 @@
                                 <state key="normal" title="Beef"/>
                                 <connections>
                                     <action selector="beefButton:" destination="MUS-cj-DJo" eventType="touchUpInside" id="9aO-Bh-cTQ"/>
-                                    <segue destination="Te9-Gr-zfv" kind="show" id="2mp-cK-gPU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-it-akV">
@@ -114,7 +113,6 @@
                                 <state key="normal" title="Pork"/>
                                 <connections>
                                     <action selector="porkButton:" destination="MUS-cj-DJo" eventType="touchUpInside" id="Rho-5W-2O3"/>
-                                    <segue destination="Te9-Gr-zfv" kind="show" id="4bE-XC-P4S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-Uo-ijn">
@@ -123,7 +121,6 @@
                                 <state key="normal" title="Chicken"/>
                                 <connections>
                                     <action selector="chickenButton:" destination="MUS-cj-DJo" eventType="touchUpInside" id="GeX-N9-WPm"/>
-                                    <segue destination="Te9-Gr-zfv" kind="show" id="xbv-hf-iar"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,7 +141,7 @@
         <!--Selected Cut View-->
         <scene sceneID="khN-8c-m0i">
             <objects>
-                <viewController id="Te9-Gr-zfv" customClass="SelectedCutView" customModule="MeatTime_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cutVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Te9-Gr-zfv" customClass="SelectedCutView" customModule="MeatTime_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jaa-Oy-xNy"/>
                         <viewControllerLayoutGuide type="bottom" id="XGU-Du-V8C"/>
@@ -286,7 +283,4 @@
         <image name="SmokinButton.png" width="864" height="360"/>
         <image name="meatTimeInAppLogo.png" width="720" height="360"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="aSH-zp-g6T"/>
-    </inferredMetricsTieBreakers>
 </document>
