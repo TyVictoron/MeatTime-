@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meatTimeInAppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-DR-eE1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="QLE-g3-3Eb"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
-                                <rect key="frame" x="40" y="212" width="295" height="116"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
+                                <frame key="frameInset" minX="40" minY="212" width="295" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="8zg-Qt-Zbd"/>
                                 </constraints>
@@ -38,7 +29,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-eo-d10">
-                                <rect key="frame" x="40" y="433" width="296" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="hof-Yx-sOO"/>
                                 </constraints>
@@ -49,14 +39,21 @@
                                     <action selector="smokin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyS-Vk-5bE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meatTimeInAppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-DR-eE1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="0cQ-C6-7Q6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="GD4-uv-AHf"/>
+                                    <constraint firstAttribute="height" constant="128" id="QLE-g3-3Eb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lVD-eo-d10" secondAttribute="bottom" constant="121" id="0UF-kd-goN"/>
                             <constraint firstItem="JZ4-WQ-JxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="4FT-uy-aIa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lVD-eo-d10" secondAttribute="trailing" constant="23" id="BG0-sv-xMg"/>
-                            <constraint firstItem="lQ3-DR-eE1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D7j-q8-goB"/>
-                            <constraint firstItem="lQ3-DR-eE1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FnB-in-HTT"/>
+                            <constraint firstItem="JZ4-WQ-JxD" firstAttribute="top" secondItem="lQ3-DR-eE1" secondAttribute="bottom" constant="56" id="Hmi-v8-wtR"/>
+                            <constraint firstItem="lQ3-DR-eE1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JQf-31-eob"/>
                             <constraint firstItem="lVD-eo-d10" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="OJF-dM-xqQ"/>
                             <constraint firstItem="JZ4-WQ-JxD" firstAttribute="top" secondItem="lQ3-DR-eE1" secondAttribute="bottom" constant="84" id="Uh6-Ef-W1Q"/>
                             <constraint firstItem="JZ4-WQ-JxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uv4-uF-cLx"/>
@@ -83,7 +80,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-d4-fua">
-                                <rect key="frame" x="16" y="617" width="61" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="8Qg-9Z-7xc"/>
                                 </constraints>
@@ -93,14 +89,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrillinButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="TFG-NC-2tN">
-                                <rect key="frame" x="40" y="28" width="295" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="781-Py-IWN"/>
                                     <constraint firstAttribute="height" constant="116" id="DZk-eW-dej"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exY-Xj-61M">
-                                <rect key="frame" x="16" y="313" width="80" height="40"/>
+                                <frame key="frameInset" minX="16" minY="313" width="80" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Beef"/>
                                 <connections>
@@ -108,7 +103,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-it-akV">
-                                <rect key="frame" x="147" y="313" width="80" height="40"/>
+                                <frame key="frameInset" minX="147" minY="313" width="80" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pork"/>
                                 <connections>
@@ -116,7 +111,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-Uo-ijn">
-                                <rect key="frame" x="279" y="313" width="80" height="40"/>
+                                <frame key="frameInset" minX="279" minY="313" width="80" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Chicken"/>
                                 <connections>
@@ -151,7 +146,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9J-Hv-tjX">
-                                <rect key="frame" x="16" y="629" width="63" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="Jrr-az-Kpe"/>
                                     <constraint firstAttribute="height" constant="30" id="To2-uy-fUa"/>
@@ -162,7 +156,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-Zf-OdU">
-                                <rect key="frame" x="112" y="546" width="151" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="K0q-Y4-bvE"/>
                                     <constraint firstAttribute="width" constant="151" id="s4r-h7-pGZ"/>
@@ -173,11 +166,8 @@
                                     <segue destination="lqK-1v-ZVf" kind="show" id="rzq-vs-Gdr"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c86-3S-O3s">
-                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
-                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c86-3S-O3s"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grillin' + Beef + V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k0-MB-ONt">
-                                <rect key="frame" x="16" y="20" width="343" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="sR0-BD-4RM"/>
                                 </constraints>
@@ -224,22 +214,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-yA-dPr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <frame key="frameInset" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
-                                <rect key="frame" x="0.0" y="128" width="195" height="128"/>
+                                <frame key="frameInset" minY="128" width="195" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="&lt; Set Timer Here" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-5w-Fcu">
-                                <rect key="frame" x="195" y="128" width="180" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
-                                <rect key="frame" x="0.0" y="264" width="375" height="345"/>
+                                <frame key="frameInset" minY="264" width="375" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">1. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do        2. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim          3. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure                               4. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                                         5. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -247,7 +230,6 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-ME-0du">
-                                <rect key="frame" x="16" y="617" width="63" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="sLw-gG-ByB"/>
                                 </constraints>
@@ -257,12 +239,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
-                                <rect key="frame" x="313" y="617" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Ezo-7Y-rih"/>
                                 </constraints>
                                 <state key="normal" title="Show"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="&lt; Set Timer Here" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-5w-Fcu">
+                                <frame key="frameInset" minX="195" minY="128" width="180" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
