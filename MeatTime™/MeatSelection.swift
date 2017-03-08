@@ -17,21 +17,22 @@ class MeatSelection: UIViewController
     {
         super.viewDidLoad()
     }
+    
     @IBAction func beefButton(_ sender: UIButton)
     {
-        meatLockerObject.selectedMeat = "beef"
+        meatLockerObject.selectedMeat = "Beef"
         nextViewController()
     }
     
     @IBAction func porkButton(_ sender: UIButton)
     {
-        meatLockerObject.selectedMeat = "pork"
+        meatLockerObject.selectedMeat = "Pork"
         nextViewController()
     }
     
     @IBAction func chickenButton(_ sender: UIButton)
     {
-        meatLockerObject.selectedMeat = "chicken"
+        meatLockerObject.selectedMeat = "Chicken"
         nextViewController()
     }
     
