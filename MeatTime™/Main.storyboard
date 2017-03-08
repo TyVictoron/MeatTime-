@@ -223,17 +223,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-yA-dPr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
-                                <rect key="frame" x="0.0" y="128" width="195" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
                                 <rect key="frame" x="0.0" y="264" width="375" height="345"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">1. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do        2. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim          3. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure                               4. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                                         5. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -249,39 +240,65 @@
                                     <segue destination="Te9-Gr-zfv" kind="show" id="aSH-zp-g6T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
-                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
+                                <rect key="frame" x="304" y="592" width="55" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Ezo-7Y-rih"/>
+                                    <constraint firstAttribute="width" constant="55" id="JYG-Ei-LKi"/>
+                                    <constraint firstAttribute="height" constant="55" id="v1q-4Y-4dm"/>
                                 </constraints>
-                                <state key="normal" title="Show"/>
+                                <state key="normal" image="camera-icon.png"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="&lt; Set Timer Here" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-5w-Fcu">
-                                <rect key="frame" x="195" y="128" width="180" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8u-Fl-nlK">
+                                <rect key="frame" x="16" y="20" width="231" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Wib-ic-peq"/>
+                                    <constraint firstAttribute="width" constant="231" id="u53-kS-fNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-9v-yXs">
+                                <rect key="frame" x="255" y="20" width="104" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8nh-rG-KYv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rawChicken.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
+                                <rect key="frame" x="90" y="128" width="195" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="MaT-ME-0du" secondAttribute="bottom" constant="20" id="1PH-Wj-2g6"/>
-                            <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="SAR-zs-Ev1" secondAttribute="bottom" constant="20" id="47l-jF-Sv7"/>
+                            <constraint firstItem="kIx-vW-GFQ" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" constant="74" id="Bit-mH-OzF"/>
+                            <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="SAR-zs-Ev1" secondAttribute="bottom" constant="20" id="LB3-7A-ezy"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="Zk1-IO-mpN"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="leading" secondItem="A8u-Fl-nlK" secondAttribute="trailing" constant="8" id="bBk-F0-n3N"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" id="dCj-5X-QmQ"/>
+                            <constraint firstItem="SAR-zs-Ev1" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="j4V-nR-Ujp"/>
                             <constraint firstItem="MaT-ME-0du" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" id="lEi-XF-lte"/>
-                            <constraint firstItem="SAR-zs-Ev1" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="oBc-pt-qQ7"/>
+                            <constraint firstItem="A8u-Fl-nlK" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" id="mxd-sE-NaU"/>
+                            <constraint firstItem="kIx-vW-GFQ" firstAttribute="top" secondItem="S1f-9v-yXs" secondAttribute="bottom" constant="8" id="na4-B5-c6J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIx-vW-GFQ" secondAttribute="trailing" constant="74" id="pFs-gi-Kjv"/>
+                            <constraint firstItem="kMu-8m-z59" firstAttribute="top" secondItem="kIx-vW-GFQ" secondAttribute="bottom" constant="8" id="wpq-h1-7py"/>
+                            <constraint firstItem="A8u-Fl-nlK" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" id="zg4-GQ-vYq"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIP-bx-bty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2396" y="139"/>
+            <point key="canvasLocation" x="2396" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
         <image name="GrillinButton.png" width="864" height="360"/>
         <image name="SmokinButton.png" width="864" height="360"/>
+        <image name="camera-icon.png" width="512" height="512"/>
         <image name="chefhatButton.png" width="1536" height="350"/>
         <image name="meatTimeInAppLogo.png" width="720" height="360"/>
+        <image name="rawChicken.jpg" width="500" height="375"/>
     </resources>
 </document>
