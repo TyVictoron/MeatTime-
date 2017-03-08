@@ -161,18 +161,6 @@
                                     <segue destination="MUS-cj-DJo" kind="show" id="zSn-Xn-c3T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-Zf-OdU">
-                                <rect key="frame" x="112" y="546" width="151" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="K0q-Y4-bvE"/>
-                                    <constraint firstAttribute="width" constant="151" id="s4r-h7-pGZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Lettus Cook!"/>
-                                <connections>
-                                    <segue destination="lqK-1v-ZVf" kind="show" id="rzq-vs-Gdr"/>
-                                </connections>
-                            </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c86-3S-O3s">
                                 <rect key="frame" x="0.0" y="225" width="375" height="216"/>
                             </pickerView>
@@ -185,10 +173,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-Zf-OdU">
+                                <rect key="frame" x="59" y="525" width="257" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="T4n-Ig-D8p"/>
+                                </constraints>
+                                <state key="normal" title="Lettus Cook!" image="chefhatButton.png"/>
+                                <connections>
+                                    <segue destination="lqK-1v-ZVf" kind="show" id="rzq-vs-Gdr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XGU-Du-V8C" firstAttribute="top" secondItem="Zk5-Zf-OdU" secondAttribute="bottom" constant="91" id="6bF-Zu-cMG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zk5-Zf-OdU" secondAttribute="trailing" constant="43" id="BZq-JW-MJS"/>
                             <constraint firstItem="6k0-MB-ONt" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" id="GGi-AG-402"/>
                             <constraint firstItem="XGU-Du-V8C" firstAttribute="top" secondItem="T9J-Hv-tjX" secondAttribute="bottom" constant="8" id="IkK-Kb-e0o"/>
                             <constraint firstItem="c86-3S-O3s" firstAttribute="centerY" secondItem="CjA-W4-Ecj" secondAttribute="centerY" id="KhJ-NM-Xnu"/>
@@ -197,6 +196,7 @@
                             <constraint firstItem="T9J-Hv-tjX" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" id="eFe-8n-9Se"/>
                             <constraint firstItem="6k0-MB-ONt" firstAttribute="centerX" secondItem="CjA-W4-Ecj" secondAttribute="centerX" id="ecb-dR-HQZ"/>
                             <constraint firstItem="c86-3S-O3s" firstAttribute="centerX" secondItem="CjA-W4-Ecj" secondAttribute="centerX" id="hkB-pT-SqB"/>
+                            <constraint firstItem="Zk5-Zf-OdU" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" constant="43" id="iPi-hc-8KY"/>
                             <constraint firstItem="6k0-MB-ONt" firstAttribute="trailing" secondItem="CjA-W4-Ecj" secondAttribute="trailingMargin" id="nOy-Fb-mYA"/>
                             <constraint firstItem="c86-3S-O3s" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leading" id="ptd-Xq-gZE"/>
                             <constraint firstAttribute="trailing" secondItem="c86-3S-O3s" secondAttribute="trailing" id="qbd-aX-fzK"/>
@@ -281,6 +281,7 @@
     <resources>
         <image name="GrillinButton.png" width="864" height="360"/>
         <image name="SmokinButton.png" width="864" height="360"/>
+        <image name="chefhatButton.png" width="1536" height="350"/>
         <image name="meatTimeInAppLogo.png" width="720" height="360"/>
     </resources>
 </document>

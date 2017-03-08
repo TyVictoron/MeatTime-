@@ -56,6 +56,7 @@
 		10A3BC481E5D4E540046669A /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BC1A1E5D4E540046669A /* iTunesArtwork@2x.png */; };
 		10A3BC491E5D4E540046669A /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A3BC1B1E5D4E540046669A /* iTunesArtwork@3x.png */; };
 		10A3BC4A1E5D4E540046669A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BC1C1E5D4E540046669A /* README.md */; };
+		10AF0CC31E7055D90053AED9 /* chefhatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CC21E7055D90053AED9 /* chefhatButton.png */; };
 		10F8B7361E69C5C20036DFD6 /* SelectedCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8B7351E69C5C20036DFD6 /* SelectedCutView.swift */; };
 		D00F81221E5DE7C600E23AC1 /* MeatLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */; };
 		D00F81241E5DE82A00E23AC1 /* MeatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */; };
@@ -138,6 +139,7 @@
 		10A3BC1A1E5D4E540046669A /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		10A3BC1B1E5D4E540046669A /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		10A3BC1C1E5D4E540046669A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		10AF0CC21E7055D90053AED9 /* chefhatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chefhatButton.png; sourceTree = "<group>"; };
 		10F8B7351E69C5C20036DFD6 /* SelectedCutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedCutView.swift; sourceTree = "<group>"; };
 		D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatLocker.swift; sourceTree = "<group>"; };
 		D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatSelection.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				10A3BBB11E5C9B030046669A /* Products */,
 				10290C581E63F97600A374CF /* SmokinButton.png */,
 				10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */,
+				10AF0CC21E7055D90053AED9 /* chefhatButton.png */,
 				10290C561E63F5D800A374CF /* GrillinButton.png */,
 				10A3BBE41E5D4E540046669A /* MEATTIMEICONS */,
 			);
@@ -418,6 +421,7 @@
 				10A3BC291E5D4E540046669A /* icon-messages-app-iPhone-60x45@1x.png in Resources */,
 				10A3BC491E5D4E540046669A /* iTunesArtwork@3x.png in Resources */,
 				10A3BC271E5D4E540046669A /* icon-messages-app-iPadAir-67x50@2x.png in Resources */,
+				10AF0CC31E7055D90053AED9 /* chefhatButton.png in Resources */,
 				10290C5B1E63FB0000A374CF /* meatTimeInAppLogo.png in Resources */,
 				10A3BC2E1E5D4E540046669A /* icon-messages-transcript-32x24@2x.png in Resources */,
 				10A3BC411E5D4E540046669A /* Icon-App-76x76@1x.png in Resources */,
