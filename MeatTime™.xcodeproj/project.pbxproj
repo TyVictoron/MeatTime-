@@ -69,6 +69,7 @@
 		D04F02DA1E60886C00478ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F02D91E60886C00478ED7 /* Main.storyboard */; };
 		D04F02DB1E60886C00478ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F02D91E60886C00478ED7 /* Main.storyboard */; };
 		D04F02DC1E60886C00478ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F02D91E60886C00478ED7 /* Main.storyboard */; };
+		D098B2381E70BEBE00AE04A3 /* MeatQuestionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = D098B2371E70BEBE00AE04A3 /* MeatQuestionMark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatSelection.swift; sourceTree = "<group>"; };
 		D00F81251E5DE84800E23AC1 /* TimerInstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInstructionView.swift; sourceTree = "<group>"; };
 		D04F02D91E60886C00478ED7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D098B2371E70BEBE00AE04A3 /* MeatQuestionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeatQuestionMark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				10AF0CCC1E707D0F0053AED9 /* rawBeefButton.png */,
 				10AF0CCA1E707CC00053AED9 /* rawChickenButton.png */,
 				10AF0CC81E707CB70053AED9 /* RawPorkButton.png */,
+				D098B2371E70BEBE00AE04A3 /* MeatQuestionMark.png */,
 				10A3BBE41E5D4E540046669A /* MEATTIMEICONS */,
 			);
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				10AF0CC71E7058E10053AED9 /* rawChicken.jpg in Resources */,
 				10A3BC281E5D4E540046669A /* icon-messages-app-iPadAir-74x55@2x.png in Resources */,
 				10A3BC381E5D4E540046669A /* Icon-App-40x40@2x.png in Resources */,
+				D098B2381E70BEBE00AE04A3 /* MeatQuestionMark.png in Resources */,
 				10A3BC451E5D4E540046669A /* Icon-Small-50x50@1x.png in Resources */,
 				10A3BC481E5D4E540046669A /* iTunesArtwork@2x.png in Resources */,
 				10A3BC471E5D4E540046669A /* iTunesArtwork@1x.png in Resources */,
