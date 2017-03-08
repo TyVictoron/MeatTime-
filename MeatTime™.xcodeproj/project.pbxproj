@@ -59,6 +59,9 @@
 		10AF0CC31E7055D90053AED9 /* chefhatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CC21E7055D90053AED9 /* chefhatButton.png */; };
 		10AF0CC51E7058700053AED9 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CC41E7058700053AED9 /* camera-icon.png */; };
 		10AF0CC71E7058E10053AED9 /* rawChicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CC61E7058E10053AED9 /* rawChicken.jpg */; };
+		10AF0CC91E707CB70053AED9 /* RawPorkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CC81E707CB70053AED9 /* RawPorkButton.png */; };
+		10AF0CCB1E707CC00053AED9 /* rawChickenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CCA1E707CC00053AED9 /* rawChickenButton.png */; };
+		10AF0CCD1E707D0F0053AED9 /* rawBeefButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AF0CCC1E707D0F0053AED9 /* rawBeefButton.png */; };
 		10F8B7361E69C5C20036DFD6 /* SelectedCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8B7351E69C5C20036DFD6 /* SelectedCutView.swift */; };
 		D00F81221E5DE7C600E23AC1 /* MeatLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */; };
 		D00F81241E5DE82A00E23AC1 /* MeatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */; };
@@ -144,6 +147,9 @@
 		10AF0CC21E7055D90053AED9 /* chefhatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chefhatButton.png; sourceTree = "<group>"; };
 		10AF0CC41E7058700053AED9 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
 		10AF0CC61E7058E10053AED9 /* rawChicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rawChicken.jpg; sourceTree = "<group>"; };
+		10AF0CC81E707CB70053AED9 /* RawPorkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RawPorkButton.png; sourceTree = "<group>"; };
+		10AF0CCA1E707CC00053AED9 /* rawChickenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rawChickenButton.png; sourceTree = "<group>"; };
+		10AF0CCC1E707D0F0053AED9 /* rawBeefButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rawBeefButton.png; sourceTree = "<group>"; };
 		10F8B7351E69C5C20036DFD6 /* SelectedCutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedCutView.swift; sourceTree = "<group>"; };
 		D00F81211E5DE7C600E23AC1 /* MeatLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatLocker.swift; sourceTree = "<group>"; };
 		D00F81231E5DE82A00E23AC1 /* MeatSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatSelection.swift; sourceTree = "<group>"; };
@@ -189,6 +195,9 @@
 				10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */,
 				10AF0CC21E7055D90053AED9 /* chefhatButton.png */,
 				10290C561E63F5D800A374CF /* GrillinButton.png */,
+				10AF0CCC1E707D0F0053AED9 /* rawBeefButton.png */,
+				10AF0CCA1E707CC00053AED9 /* rawChickenButton.png */,
+				10AF0CC81E707CB70053AED9 /* RawPorkButton.png */,
 				10A3BBE41E5D4E540046669A /* MEATTIMEICONS */,
 			);
 			sourceTree = "<group>";
@@ -426,6 +435,7 @@
 				10A3BC3A1E5D4E540046669A /* Icon-App-57x57@1x.png in Resources */,
 				10A3BC291E5D4E540046669A /* icon-messages-app-iPhone-60x45@1x.png in Resources */,
 				10A3BC491E5D4E540046669A /* iTunesArtwork@3x.png in Resources */,
+				10AF0CC91E707CB70053AED9 /* RawPorkButton.png in Resources */,
 				10A3BC271E5D4E540046669A /* icon-messages-app-iPadAir-67x50@2x.png in Resources */,
 				10AF0CC31E7055D90053AED9 /* chefhatButton.png in Resources */,
 				10290C5B1E63FB0000A374CF /* meatTimeInAppLogo.png in Resources */,
@@ -433,6 +443,7 @@
 				10A3BC2E1E5D4E540046669A /* icon-messages-transcript-32x24@2x.png in Resources */,
 				10A3BC411E5D4E540046669A /* Icon-App-76x76@1x.png in Resources */,
 				10A3BC251E5D4E540046669A /* icon-messages-app-27x20@2x.png in Resources */,
+				10AF0CCB1E707CC00053AED9 /* rawChickenButton.png in Resources */,
 				10A3BC351E5D4E540046669A /* Icon-App-29x29@2x.png in Resources */,
 				10290C591E63F97600A374CF /* SmokinButton.png in Resources */,
 				10A3BC431E5D4E540046669A /* Icon-App-76x76@3x.png in Resources */,
@@ -452,6 +463,7 @@
 				10A3BC371E5D4E540046669A /* Icon-App-40x40@1x.png in Resources */,
 				10A3BC461E5D4E540046669A /* Icon-Small-50x50@2x.png in Resources */,
 				10A3BC2B1E5D4E540046669A /* icon-messages-app-iPhone-60x45@3x.png in Resources */,
+				10AF0CCD1E707D0F0053AED9 /* rawBeefButton.png in Resources */,
 				10A3BC421E5D4E540046669A /* Icon-App-76x76@2x.png in Resources */,
 				10A3BC341E5D4E540046669A /* Icon-App-29x29@1x.png in Resources */,
 				10A3BC261E5D4E540046669A /* icon-messages-app-27x20@3x.png in Resources */,

@@ -12,10 +12,16 @@ class MeatSelection: UIViewController
 {
     var contents : [[String]] = []
     var meatLockerObject = MeatLocker()
+    @IBOutlet weak var typeImage: UIImageView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        if (meatLockerObject.cookingStyle == "Grillin'") {
+            typeImage.image = UIImage(named: "GrillinButton.png")
+        } else {
+            typeImage.image = UIImage(named: "SmokinButton.png")
+        }
     }
     
     @IBAction func beefButton(_ sender: UIButton)

@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
                                 <rect key="frame" x="40" y="212" width="295" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="8zg-Qt-Zbd"/>
@@ -55,6 +55,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lVD-eo-d10" secondAttribute="bottom" constant="121" id="0UF-kd-goN"/>
                             <constraint firstItem="JZ4-WQ-JxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="4FT-uy-aIa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lVD-eo-d10" secondAttribute="trailing" constant="23" id="BG0-sv-xMg"/>
+                            <constraint firstItem="JZ4-WQ-JxD" firstAttribute="top" secondItem="lQ3-DR-eE1" secondAttribute="bottom" constant="56" id="HtX-Jw-O51"/>
                             <constraint firstAttribute="trailing" secondItem="lQ3-DR-eE1" secondAttribute="trailing" id="M94-3C-y8T"/>
                             <constraint firstItem="lVD-eo-d10" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="OJF-dM-xqQ"/>
                             <constraint firstItem="JZ4-WQ-JxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uv4-uF-cLx"/>
@@ -99,40 +100,60 @@
                                     <constraint firstAttribute="height" constant="116" id="DZk-eW-dej"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exY-Xj-61M">
-                                <rect key="frame" x="16" y="313" width="80" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Beef"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exY-Xj-61M">
+                                <rect key="frame" x="56" y="180" width="262" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="U8L-0K-2oY"/>
+                                    <constraint firstAttribute="height" constant="61" id="tVI-f5-aEL"/>
+                                </constraints>
+                                <state key="normal" image="rawBeefButton.png"/>
                                 <connections>
                                     <action selector="beefButton:" destination="MUS-cj-DJo" eventType="touchUpInside" id="9aO-Bh-cTQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-it-akV">
-                                <rect key="frame" x="147" y="313" width="80" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pork"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-it-akV">
+                                <rect key="frame" x="56" y="303" width="264" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="ACr-2l-n65"/>
+                                    <constraint firstAttribute="height" constant="60" id="a9K-lM-4yO"/>
+                                </constraints>
+                                <state key="normal" title="Pork" image="RawPorkButton.png"/>
                                 <connections>
                                     <action selector="porkButton:" destination="MUS-cj-DJo" eventType="touchUpInside" id="Rho-5W-2O3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-Uo-ijn">
-                                <rect key="frame" x="279" y="313" width="80" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Chicken"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-Uo-ijn">
+                                <rect key="frame" x="48" y="427" width="279" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="REd-OJ-rw2"/>
+                                    <constraint firstAttribute="height" constant="65" id="ahw-QQ-myb"/>
+                                </constraints>
+                                <state key="normal" title="Chicken" image="rawChickenButton.png"/>
                                 <connections>
                                     <action selector="chickenButton:" destination="MUS-cj-DJo" eventType="touchUpInside" id="GeX-N9-WPm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ISE-d4-fua" firstAttribute="top" secondItem="KYk-Uo-ijn" secondAttribute="bottom" constant="125" id="KAp-za-dm9"/>
                             <constraint firstItem="ISE-d4-fua" firstAttribute="leading" secondItem="Iew-xd-8kd" secondAttribute="leadingMargin" id="KKN-wl-eKm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TFG-NC-2tN" secondAttribute="trailing" constant="24" id="Ldi-3n-K3v"/>
+                            <constraint firstItem="obW-it-akV" firstAttribute="top" secondItem="exY-Xj-61M" secondAttribute="bottom" constant="62" id="Okt-2V-YrT"/>
+                            <constraint firstItem="exY-Xj-61M" firstAttribute="centerX" secondItem="Iew-xd-8kd" secondAttribute="centerX" id="T89-3C-Tpa"/>
+                            <constraint firstItem="obW-it-akV" firstAttribute="centerX" secondItem="Iew-xd-8kd" secondAttribute="centerX" id="WMq-eD-mmb"/>
                             <constraint firstItem="TFG-NC-2tN" firstAttribute="top" secondItem="G78-gB-11f" secondAttribute="bottom" constant="8" id="csN-h6-cG4"/>
+                            <constraint firstItem="KYk-Uo-ijn" firstAttribute="centerX" secondItem="Iew-xd-8kd" secondAttribute="centerX" id="fhP-C3-NhV"/>
                             <constraint firstItem="TFG-NC-2tN" firstAttribute="leading" secondItem="Iew-xd-8kd" secondAttribute="leadingMargin" constant="24" id="guf-NX-1Po"/>
+                            <constraint firstItem="exY-Xj-61M" firstAttribute="top" secondItem="TFG-NC-2tN" secondAttribute="bottom" constant="36" id="ixl-qE-ufk"/>
+                            <constraint firstItem="obW-it-akV" firstAttribute="centerY" secondItem="Iew-xd-8kd" secondAttribute="centerY" id="khR-Xz-z7J"/>
+                            <constraint firstItem="KYk-Uo-ijn" firstAttribute="top" secondItem="obW-it-akV" secondAttribute="bottom" constant="64" id="s6c-62-4uc"/>
                             <constraint firstItem="Bz8-8T-z1E" firstAttribute="top" secondItem="ISE-d4-fua" secondAttribute="bottom" constant="20" id="yTi-mg-6Wq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="typeImage" destination="TFG-NC-2tN" id="RIZ-LT-cKO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioL-Un-Dil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +205,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XGU-Du-V8C" firstAttribute="top" secondItem="Zk5-Zf-OdU" secondAttribute="bottom" constant="91" id="6bF-Zu-cMG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zk5-Zf-OdU" secondAttribute="trailing" constant="43" id="BZq-JW-MJS"/>
@@ -247,6 +268,9 @@
                                     <constraint firstAttribute="height" constant="55" id="v1q-4Y-4dm"/>
                                 </constraints>
                                 <state key="normal" image="camera-icon.png"/>
+                                <connections>
+                                    <action selector="cameraButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="bbz-NU-Olg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8u-Fl-nlK">
                                 <rect key="frame" x="16" y="20" width="231" height="100"/>
@@ -265,12 +289,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTimerButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="aWp-gj-xAU"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rawChicken.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
                                 <rect key="frame" x="90" y="128" width="195" height="128"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="MaT-ME-0du" secondAttribute="bottom" constant="20" id="1PH-Wj-2g6"/>
                             <constraint firstItem="kIx-vW-GFQ" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" constant="74" id="Bit-mH-OzF"/>
@@ -287,6 +314,11 @@
                             <constraint firstItem="A8u-Fl-nlK" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" id="zg4-GQ-vYq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageOfMeat" destination="kIx-vW-GFQ" id="EaD-BD-hto"/>
+                        <outlet property="startTimerNuttonOutlet" destination="S1f-9v-yXs" id="3ox-J4-HtC"/>
+                        <outlet property="timerLabel" destination="A8u-Fl-nlK" id="xad-3f-Idh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIP-bx-bty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,10 +327,13 @@
     </scenes>
     <resources>
         <image name="GrillinButton.png" width="864" height="360"/>
+        <image name="RawPorkButton.png" width="1057" height="250"/>
         <image name="SmokinButton.png" width="864" height="360"/>
         <image name="camera-icon.png" width="512" height="512"/>
         <image name="chefhatButton.png" width="1536" height="350"/>
         <image name="meatTimeInAppLogo.png" width="720" height="360"/>
+        <image name="rawBeefButton.png" width="1077" height="265"/>
         <image name="rawChicken.jpg" width="500" height="375"/>
+        <image name="rawChickenButton.png" width="1498" height="375"/>
     </resources>
 </document>
