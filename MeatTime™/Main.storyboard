@@ -228,8 +228,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
                                 <frame key="frameInset" minY="264" width="375" height="345"/>
+
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">1. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do        2. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim          3. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure                               4. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                                         5. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -273,13 +275,18 @@
                                     <action selector="startTimerButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="aWp-gj-xAU"/>
                                 </connections>
                             </button>
+
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeatQuestionMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ"/>
+
                         </subviews>
                         <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="MaT-ME-0du" secondAttribute="bottom" constant="20" id="1PH-Wj-2g6"/>
                             <constraint firstItem="kIx-vW-GFQ" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" constant="74" id="Bit-mH-OzF"/>
+                            <constraint firstItem="kMu-8m-z59" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leading" id="FAf-0l-m5V"/>
+                            <constraint firstItem="MaT-ME-0du" firstAttribute="top" secondItem="kMu-8m-z59" secondAttribute="bottom" constant="8" id="Kur-MJ-mKJ"/>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="SAR-zs-Ev1" secondAttribute="bottom" constant="20" id="LB3-7A-ezy"/>
+                            <constraint firstAttribute="trailing" secondItem="kMu-8m-z59" secondAttribute="trailing" id="Zb7-gM-X33"/>
                             <constraint firstItem="S1f-9v-yXs" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="Zk1-IO-mpN"/>
                             <constraint firstItem="S1f-9v-yXs" firstAttribute="leading" secondItem="A8u-Fl-nlK" secondAttribute="trailing" constant="8" id="bBk-F0-n3N"/>
                             <constraint firstItem="S1f-9v-yXs" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" id="dCj-5X-QmQ"/>
