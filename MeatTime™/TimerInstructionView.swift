@@ -27,6 +27,7 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
     }
     
     @IBAction func startTimerButton(_ sender: Any) {

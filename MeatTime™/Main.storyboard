@@ -167,7 +167,7 @@
                                 </constraints>
                                 <state key="normal" title="&lt; Back"/>
                                 <connections>
-                                    <segue destination="MUS-cj-DJo" kind="show" id="zSn-Xn-c3T"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="QEZ-ta-1TG"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c86-3S-O3s"/>
@@ -266,7 +266,7 @@
                                     <action selector="cameraButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="bbz-NU-Olg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8u-Fl-nlK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8u-Fl-nlK">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Wib-ic-peq"/>
                                     <constraint firstAttribute="width" constant="231" id="u53-kS-fNn"/>
@@ -336,6 +336,6 @@
         <image name="rawChickenButton.png" width="1498" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u1d-ca-QXH"/>
+        <segue reference="75P-l7-kf5"/>
     </inferredMetricsTieBreakers>
 </document>
