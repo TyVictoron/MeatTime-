@@ -188,14 +188,22 @@
                                     <segue destination="lqK-1v-ZVf" kind="show" id="rzq-vs-Gdr"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RawPorkButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-Qr-Ezw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="Fax-8v-4Yj"/>
+                                    <constraint firstAttribute="height" constant="61" id="GzP-jc-8gf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="centerX" secondItem="CjA-W4-Ecj" secondAttribute="centerX" id="3OO-cR-5Ir"/>
                             <constraint firstItem="XGU-Du-V8C" firstAttribute="top" secondItem="Zk5-Zf-OdU" secondAttribute="bottom" constant="91" id="6bF-Zu-cMG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zk5-Zf-OdU" secondAttribute="trailing" constant="43" id="BZq-JW-MJS"/>
                             <constraint firstItem="6k0-MB-ONt" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" id="GGi-AG-402"/>
                             <constraint firstItem="XGU-Du-V8C" firstAttribute="top" secondItem="T9J-Hv-tjX" secondAttribute="bottom" constant="8" id="IkK-Kb-e0o"/>
                             <constraint firstItem="c86-3S-O3s" firstAttribute="centerY" secondItem="CjA-W4-Ecj" secondAttribute="centerY" id="KhJ-NM-Xnu"/>
+                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="centerY" secondItem="CjA-W4-Ecj" secondAttribute="centerY" constant="-178" id="Kp9-se-8iL"/>
                             <constraint firstItem="6k0-MB-ONt" firstAttribute="top" secondItem="Jaa-Oy-xNy" secondAttribute="bottom" id="NE3-WE-XYE"/>
                             <constraint firstItem="Zk5-Zf-OdU" firstAttribute="centerX" secondItem="CjA-W4-Ecj" secondAttribute="centerX" id="Up0-vs-Vwr"/>
                             <constraint firstItem="T9J-Hv-tjX" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" id="eFe-8n-9Se"/>
@@ -210,6 +218,7 @@
                     <connections>
                         <outlet property="InfoLabel" destination="6k0-MB-ONt" id="nCE-Ka-aqS"/>
                         <outlet property="picker" destination="c86-3S-O3s" id="TFa-cg-HWo"/>
+                        <outlet property="selectedMeatImage" destination="aq0-Qr-Ezw" id="lfI-Cb-RBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHD-vS-op4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -272,7 +281,12 @@
                                     <action selector="startTimerButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="aWp-gj-xAU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeatQuestionMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeatQuestionMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="FpS-TE-KZS"/>
+                                    <constraint firstAttribute="width" constant="195" id="GbE-K7-J0e"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -296,6 +310,7 @@
                     </view>
                     <connections>
                         <outlet property="imageOfMeat" destination="kIx-vW-GFQ" id="EaD-BD-hto"/>
+                        <outlet property="instructionsText" destination="kMu-8m-z59" id="b09-1g-rxc"/>
                         <outlet property="startTimerNuttonOutlet" destination="S1f-9v-yXs" id="3ox-J4-HtC"/>
                         <outlet property="timerLabel" destination="A8u-Fl-nlK" id="xad-3f-Idh"/>
                     </connections>

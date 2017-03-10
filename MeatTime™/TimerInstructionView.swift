@@ -15,11 +15,14 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     var time = 0
     var time2 = 0
     var time3 = 0
+    
     var temp = ""
     var meatLockerObject = MeatLocker()
+    
     @IBOutlet weak var startTimerNuttonOutlet: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var imageOfMeat: UIImageView!
+    @IBOutlet weak var instructionsText: UITextView!
     
     override func viewDidLoad()
     {
@@ -79,7 +82,7 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
         }
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         {

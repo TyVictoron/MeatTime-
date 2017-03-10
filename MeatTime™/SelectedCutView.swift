@@ -19,6 +19,7 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
 
     @IBOutlet weak var InfoLabel: UILabel!
     @IBOutlet weak var picker: UIPickerView!
+    @IBOutlet weak var selectedMeatImage: UIImageView!
     
     var meatLockerObject = MeatLocker()
     
@@ -29,7 +30,20 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         picker.delegate = self
         picker.dataSource = self
         
-        InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat 
+        InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat
+        
+        if (meatLockerObject.selectedMeat == "Beef")
+        {
+            selectedMeatImage.image = UIImage(named:"rawBeefButton.png")
+        }
+        else if (meatLockerObject.selectedMeat == "Pork")
+        {
+            selectedMeatImage.image = UIImage(named:"RawPorkButton.png")
+        }
+        else
+        {
+            selectedMeatImage.image = UIImage(named:"rawChickenButton.png")
+        }
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
@@ -42,10 +56,12 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         if (meatLockerObject.selectedMeat == "Beef")
         {
             return meatLockerObject.BeefCuts.count
+            
         }
         else if (meatLockerObject.selectedMeat == "Pork")
         {
             return meatLockerObject.PorkCuts.count
+            
         }
         else
         {
