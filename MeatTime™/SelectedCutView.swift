@@ -35,15 +35,19 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         if (meatLockerObject.selectedMeat == "Beef")
         {
             selectedMeatImage.image = UIImage(named:"rawBeefButton.png")
+            InfoLabel.text! = "Ribeye"
         }
         else if (meatLockerObject.selectedMeat == "Pork")
         {
             selectedMeatImage.image = UIImage(named:"RawPorkButton.png")
+            InfoLabel.text! = "Chops"
         }
         else
         {
             selectedMeatImage.image = UIImage(named:"rawChickenButton.png")
+            InfoLabel.text! = "Breast"
         }
+        
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
@@ -91,15 +95,15 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     {
         if (meatLockerObject.selectedMeat == "Beef")
         {
-            InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat + ", " + meatLockerObject.BeefCuts[row]
+            InfoLabel.text! = meatLockerObject.BeefCuts[row]
         }
         else if (meatLockerObject.selectedMeat == "Pork")
         {
-            InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat + ", " + meatLockerObject.PorkCuts[row]
+            InfoLabel.text! = meatLockerObject.PorkCuts[row]
         }
         else
         {
-            InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat + ", " + meatLockerObject.ChickenCuts[row]
+            InfoLabel.text! = meatLockerObject.ChickenCuts[row]
         }
     }
 }
