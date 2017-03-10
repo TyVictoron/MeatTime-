@@ -228,10 +228,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
-                                <frame key="frameInset" minY="264" width="375" height="345"/>
-
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">1. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do        2. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim          3. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure                               4. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                                         5. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -243,7 +240,7 @@
                                 </constraints>
                                 <state key="normal" title="&lt; Back"/>
                                 <connections>
-                                    <segue destination="Te9-Gr-zfv" kind="show" id="aSH-zp-g6T"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="75P-l7-kf5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
@@ -275,9 +272,7 @@
                                     <action selector="startTimerButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="aWp-gj-xAU"/>
                                 </connections>
                             </button>
-
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeatQuestionMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ"/>
-
                         </subviews>
                         <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -321,4 +316,7 @@
         <image name="rawBeefButton.png" width="1077" height="265"/>
         <image name="rawChickenButton.png" width="1498" height="375"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="75P-l7-kf5"/>
+    </inferredMetricsTieBreakers>
 </document>

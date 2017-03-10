@@ -64,17 +64,35 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     func useCam() {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
+        {
             let picker = UIImagePickerController()
             picker.allowsEditing = false
             picker.sourceType = UIImagePickerControllerSourceType.camera
             picker.cameraCaptureMode = .photo
             picker.modalPresentationStyle = .fullScreen
             present(picker,animated: true,completion: nil)
-        } else {
+        }
+        else
+        {
             noCamera()
         }
     }
+    
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        {
+            imageOfMeat.image = image
+        }
+        else
+        {
+            print("Something went wrong")
+        }
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+
     
     func noCamera(){
         let alertVC = UIAlertController(title: "No Camera", message: "Sorry, this device has no camera", preferredStyle: .alert)

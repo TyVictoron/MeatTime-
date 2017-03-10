@@ -29,7 +29,7 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         picker.delegate = self
         picker.dataSource = self
         
-        InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat
+        InfoLabel.text! = meatLockerObject.cookingStyle + ", " + meatLockerObject.selectedMeat 
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
