@@ -9,12 +9,13 @@
 import UIKit
 
 // accesses the web and pulls times and instructions
-class TimerInstructionView: UIViewController
+class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
     var timer = Timer()
     var time = 0
     var time2 = 0
     var time3 = 0
+    var temp = ""
     var meatLockerObject = MeatLocker()
     @IBOutlet weak var startTimerNuttonOutlet: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
@@ -42,7 +43,44 @@ class TimerInstructionView: UIViewController
     }
     
     @IBAction func cameraButton(_ sender: Any) {
+        let ac = UIAlertController(title: "Add Image From", message: nil, preferredStyle: .alert)
         
+        ac.addAction(UIAlertAction(title: "Photo Library", style: .default) { _ in
+            self.getImage()
+        })
+        
+        ac.addAction(UIAlertAction(title: "Camera", style: .default) { _ in
+            self.useCam()
+        })
+        
+        present(ac, animated: true)
+    }
+    
+    func getImage() {
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    
+    func useCam() {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            let picker = UIImagePickerController()
+            picker.allowsEditing = false
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            picker.cameraCaptureMode = .photo
+            picker.modalPresentationStyle = .fullScreen
+            present(picker,animated: true,completion: nil)
+        } else {
+            noCamera()
+        }
+    }
+    
+    func noCamera(){
+        let alertVC = UIAlertController(title: "No Camera", message: "Sorry, this device has no camera", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style:.default, handler: nil)
+        alertVC.addAction(okAction)
+        present(alertVC, animated: true, completion: nil)
     }
     
 }
