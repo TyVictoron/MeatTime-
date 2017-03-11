@@ -22,7 +22,7 @@ class MeatLocker: NSObject
     var ChickenCuts : [String] = ["Breast", "Legs", "Wings","Thighs","Whole"]
     var ChickenCutsTemps : [String] = ["160","165","175","165","170"]
    
-    var chickenInstructionGrilling = "Place the chicken on the hot side of the grate, directly above the coals. Sear the breasts for about three to four minutes per side, turning only once, until golden brown. If the grill flares up, temporarily move the chicken away from the coals. When the breasts are properly browned, move them to the warm, or indirect, side of the grate. Replace the lid and, if using a grill thermometer, bring the temperature up to 350°F. Then get the chicken to the desired temperature"
+    var chickenInstructionGrilling = "Place the chicken on the hot side of the grate, directly above the coals. Sear for about three to four minutes per side, turning only once, until golden brown. If the grill flares up, temporarily move the chicken away from the coals. When properly browned, move them to the warm, or indirect, side of the grate. Replace the lid and, if using a grill thermometer, bring the temperature up to 350°F. Then get the chicken to the desired temperature"
     
     var chickenInstructionSmoking = "Place the chicken in the smoker and close door.While smoking occasionally adjust the vents to keep the cookingtemperature between 250°F-300°F (less air to cool the temperature, more to increase the heat). Two or three times during the smoking, add a handful of wood cuttings or chips on top of the lit charcoal. (Don't do this too much or else the meat will be overly smoky. Once every hour - hour and half is usually perfect).Cook until the thickest part of the breast meat is Done"
     
@@ -38,4 +38,5 @@ class MeatLocker: NSObject
     
     var selectedMeat : String = ""
     var selectedCut : String = ""
+    var selectedCutRow : Int = 0
 }

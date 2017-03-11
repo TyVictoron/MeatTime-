@@ -195,7 +195,7 @@
                                     <constraint firstAttribute="width" constant="343" id="Hkh-WV-JbT"/>
                                     <constraint firstAttribute="height" constant="36" id="sR0-BD-4RM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -336,6 +336,6 @@
         <image name="rawChickenButton.png" width="1498" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="75P-l7-kf5"/>
+        <segue reference="QEZ-ta-1TG"/>
     </inferredMetricsTieBreakers>
 </document>

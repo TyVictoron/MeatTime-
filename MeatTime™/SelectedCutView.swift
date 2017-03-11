@@ -96,7 +96,6 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         {
             InfoLabel.text! = meatLockerObject.BeefCuts[row]
             meatLockerObject.selectedCut = meatLockerObject.BeefCuts[row]
-            
         }
         else if (meatLockerObject.selectedMeat == "Pork")
         {
