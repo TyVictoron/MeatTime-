@@ -27,7 +27,7 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        setInstructions()   
     }
     
     @IBAction func startTimerButton(_ sender: Any) {
@@ -103,6 +103,34 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
         let okAction = UIAlertAction(title: "OK", style:.default, handler: nil)
         alertVC.addAction(okAction)
         present(alertVC, animated: true, completion: nil)
+    }
+    
+    func setInstructions()
+    {
+        if (meatLockerObject.selectedMeat == "Chicken" && meatLockerObject.cookingStyle == "Grillin'")
+        {
+            instructionsText.text! = meatLockerObject.chickenInstructionGrilling
+        }
+        else if (meatLockerObject.selectedMeat == "Chicken" && meatLockerObject.cookingStyle == "Smokin'")
+        {
+            instructionsText.text! = meatLockerObject.chickenInstructionSmoking
+        }
+        else if (meatLockerObject.selectedMeat == "Beef" && meatLockerObject.cookingStyle == "Grillin'")
+        {
+            instructionsText.text! = meatLockerObject.beefInstructionGrilling
+        }
+        else if (meatLockerObject.selectedMeat == "Beef" && meatLockerObject.cookingStyle == "Smokin'")
+        {
+            instructionsText.text! = meatLockerObject.beefInstructionSmoking
+        }
+        else if (meatLockerObject.selectedMeat == "Pork" && meatLockerObject.cookingStyle == "Grillin'")
+        {
+            instructionsText.text! = meatLockerObject.porkInstructionGrilling
+        }
+        else if (meatLockerObject.selectedMeat == "Pork" && meatLockerObject.cookingStyle == "Smokin'")
+        {
+            instructionsText.text! = meatLockerObject.porkInstructionSmoking
+        }
     }
     
 }

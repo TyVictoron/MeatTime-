@@ -109,4 +109,16 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
             meatLockerObject.selectedCut = meatLockerObject.ChickenCuts[row]
         }
     }
+    
+    @IBAction func letsCookButton(_ sender: UIButton)
+    {
+        nextViewController()
+    }
+    
+    func nextViewController()
+    {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "timerPage") as! TimerInstructionView
+        vc.meatLockerObject = self.meatLockerObject
+        self.present(vc, animated: true, completion: nil)
+    }
 }
