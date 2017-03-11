@@ -90,6 +90,7 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         {
             imageOfMeat.image = image
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         }
         else
         {

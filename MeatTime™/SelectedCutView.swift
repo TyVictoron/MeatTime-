@@ -35,17 +35,17 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         if (meatLockerObject.selectedMeat == "Beef")
         {
             selectedMeatImage.image = UIImage(named:"rawBeefButton.png")
-            InfoLabel.text! = "Ribeye"
+            InfoLabel.text! = "General"
         }
         else if (meatLockerObject.selectedMeat == "Pork")
         {
             selectedMeatImage.image = UIImage(named:"RawPorkButton.png")
-            InfoLabel.text! = "Chops"
+            InfoLabel.text! = "General"
         }
         else
         {
             selectedMeatImage.image = UIImage(named:"rawChickenButton.png")
-            InfoLabel.text! = "Breast"
+            InfoLabel.text! = "General"
         }
     }
 
