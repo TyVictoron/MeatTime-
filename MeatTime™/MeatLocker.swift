@@ -39,4 +39,5 @@ class MeatLocker: NSObject
     var selectedMeat : String = ""
     var selectedCut : String = ""
     var selectedCutRow : Int = 0
+    var selectedMeatTemp : String = ""
 }

@@ -96,16 +96,19 @@ class SelectedCutView: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         {
             InfoLabel.text! = meatLockerObject.BeefCuts[row]
             meatLockerObject.selectedCut = meatLockerObject.BeefCuts[row]
+            meatLockerObject.selectedMeatTemp = meatLockerObject.BeefCutTemps[row]
         }
         else if (meatLockerObject.selectedMeat == "Pork")
         {
             InfoLabel.text! = meatLockerObject.PorkCuts[row]
             meatLockerObject.selectedCut = meatLockerObject.PorkCuts[row]
+            meatLockerObject.selectedMeatTemp = meatLockerObject.PorkCutTemps[row]
         }
         else
         {
             InfoLabel.text! = meatLockerObject.ChickenCuts[row]
             meatLockerObject.selectedCut = meatLockerObject.ChickenCuts[row]
+            meatLockerObject.selectedMeatTemp = meatLockerObject.ChickenCutsTemps[row]
         }
     }
     

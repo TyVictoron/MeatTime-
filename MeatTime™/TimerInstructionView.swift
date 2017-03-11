@@ -19,6 +19,8 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     var temp = ""
     var meatLockerObject = MeatLocker()
     
+    var amountToCheck = 0
+    
     @IBOutlet weak var startTimerNuttonOutlet: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var imageOfMeat: UIImageView!
@@ -109,28 +111,33 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     {
         if (meatLockerObject.selectedMeat == "Chicken" && meatLockerObject.cookingStyle == "Grillin'")
         {
-            instructionsText.text! = meatLockerObject.chickenInstructionGrilling
+            instructionsText.text! = meatLockerObject.chickenInstructionGrilling + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
         else if (meatLockerObject.selectedMeat == "Chicken" && meatLockerObject.cookingStyle == "Smokin'")
         {
-            instructionsText.text! = meatLockerObject.chickenInstructionSmoking
+            instructionsText.text! = meatLockerObject.chickenInstructionSmoking + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
         else if (meatLockerObject.selectedMeat == "Beef" && meatLockerObject.cookingStyle == "Grillin'")
         {
-            instructionsText.text! = meatLockerObject.beefInstructionGrilling
+            instructionsText.text! = meatLockerObject.beefInstructionGrilling + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
         else if (meatLockerObject.selectedMeat == "Beef" && meatLockerObject.cookingStyle == "Smokin'")
         {
-            instructionsText.text! = meatLockerObject.beefInstructionSmoking
+            instructionsText.text! = meatLockerObject.beefInstructionSmoking + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
         else if (meatLockerObject.selectedMeat == "Pork" && meatLockerObject.cookingStyle == "Grillin'")
         {
-            instructionsText.text! = meatLockerObject.porkInstructionGrilling
+            instructionsText.text! = meatLockerObject.porkInstructionGrilling + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
         else if (meatLockerObject.selectedMeat == "Pork" && meatLockerObject.cookingStyle == "Smokin'")
         {
-            instructionsText.text! = meatLockerObject.porkInstructionSmoking
+            instructionsText.text! = meatLockerObject.porkInstructionSmoking + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
+    }
+    
+    func checkForTemp()
+    {
+        
     }
     
 }
