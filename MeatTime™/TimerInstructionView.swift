@@ -91,6 +91,10 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
         {
             imageOfMeat.image = image
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            let alertVC = UIAlertController(title: "Saved!", message: "This image has be saved to the gallery!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Cool", style:.default, handler: nil)
+            alertVC.addAction(okAction)
+            present(alertVC, animated: true, completion: nil)
         }
         else
         {
