@@ -49,7 +49,7 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func cameraButton(_ sender: Any) {
-        let ac = UIAlertController(title: "Add Image From", message: nil, preferredStyle: .alert)
+        let ac = UIAlertController(title: "Add and Save Image From", message: nil, preferredStyle: .alert)
         
         ac.addAction(UIAlertAction(title: "Photo Library", style: .default) { _ in
             self.getImage()
@@ -91,10 +91,6 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
         {
             imageOfMeat.image = image
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            let alertVC = UIAlertController(title: "Saved!", message: "This image has be saved to the gallery!", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Cool", style:.default, handler: nil)
-            alertVC.addAction(okAction)
-            present(alertVC, animated: true, completion: nil)
         }
         else
         {
@@ -139,10 +135,4 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
             instructionsText.text! = meatLockerObject.porkInstructionSmoking + " Make sure to cook the meat to a temperature of at least " + meatLockerObject.selectedMeatTemp
         }
     }
-    
-    func checkForTemp()
-    {
-        
-    }
-    
 }
