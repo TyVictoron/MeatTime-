@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,6 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-WQ-JxD">
+                                <rect key="frame" x="40" y="212" width="295" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="8zg-Qt-Zbd"/>
                                 </constraints>
@@ -28,6 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-eo-d10">
+                                <rect key="frame" x="40" y="433" width="296" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="hof-Yx-sOO"/>
                                 </constraints>
@@ -39,6 +44,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meatTimeInAppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-DR-eE1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="li2-XI-Wsf"/>
                                 </constraints>
@@ -78,6 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-d4-fua">
+                                <rect key="frame" x="16" y="617" width="61" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="8Qg-9Z-7xc"/>
                                 </constraints>
@@ -87,12 +94,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrillinButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="TFG-NC-2tN">
+                                <rect key="frame" x="40" y="28" width="295" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="781-Py-IWN"/>
                                     <constraint firstAttribute="height" constant="116" id="DZk-eW-dej"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exY-Xj-61M">
+                                <rect key="frame" x="56.5" y="180" width="262" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="U8L-0K-2oY"/>
                                     <constraint firstAttribute="height" constant="61" id="tVI-f5-aEL"/>
@@ -103,6 +112,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-it-akV">
+                                <rect key="frame" x="55.5" y="303" width="264" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="264" id="ACr-2l-n65"/>
                                     <constraint firstAttribute="height" constant="60" id="a9K-lM-4yO"/>
@@ -113,6 +123,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-Uo-ijn">
+                                <rect key="frame" x="48" y="427" width="279" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="279" id="REd-OJ-rw2"/>
                                     <constraint firstAttribute="height" constant="65" id="ahw-QQ-myb"/>
@@ -161,6 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9J-Hv-tjX">
+                                <rect key="frame" x="16" y="629" width="63" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="Jrr-az-Kpe"/>
                                     <constraint firstAttribute="height" constant="30" id="To2-uy-fUa"/>
@@ -170,8 +182,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="QEZ-ta-1TG"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c86-3S-O3s"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-Zf-OdU">
+                                <rect key="frame" x="59" y="525" width="257" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="T4n-Ig-D8p"/>
                                 </constraints>
@@ -181,41 +193,39 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RawPorkButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-Qr-Ezw">
+                                <rect key="frame" x="0.0" y="38" width="375" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="AgD-JD-Va3"/>
-                                    <constraint firstAttribute="height" constant="100" id="Bah-CG-50E"/>
-                                    <constraint firstAttribute="width" constant="375" id="QZx-1z-shf"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="q2q-zi-LUt"/>
+                                    <constraint firstAttribute="height" constant="80" id="geO-sy-Mew"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ribeye" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k0-MB-ONt">
-                                <frame key="frameInset" minX="16" minY="168" width="343" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ribeye" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k0-MB-ONt">
+                                <rect key="frame" x="16" y="168" width="343" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="2UP-Gb-3p0"/>
-                                    <constraint firstAttribute="width" constant="343" id="Hkh-WV-JbT"/>
-                                    <constraint firstAttribute="height" constant="36" id="sR0-BD-4RM"/>
+                                    <constraint firstAttribute="height" constant="64" id="M0N-fP-2uo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c86-3S-O3s">
+                                <rect key="frame" x="0.0" y="302" width="375" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leading" id="4xh-yk-k6z"/>
+                            <constraint firstItem="6k0-MB-ONt" firstAttribute="top" secondItem="aq0-Qr-Ezw" secondAttribute="bottom" constant="50" id="0Su-Dc-PtZ"/>
                             <constraint firstItem="T9J-Hv-tjX" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" id="5KE-ma-xSn"/>
-                            <constraint firstItem="6k0-MB-ONt" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" id="8eo-gX-QXd"/>
                             <constraint firstItem="Zk5-Zf-OdU" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leadingMargin" constant="43" id="AO5-jh-cdo"/>
+                            <constraint firstItem="6k0-MB-ONt" firstAttribute="leading" secondItem="T9J-Hv-tjX" secondAttribute="leading" id="FgX-ae-54F"/>
+                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="trailing" secondItem="c86-3S-O3s" secondAttribute="trailing" id="IhB-PO-zzz"/>
                             <constraint firstItem="XGU-Du-V8C" firstAttribute="top" secondItem="T9J-Hv-tjX" secondAttribute="bottom" constant="8" id="JX6-Hg-Vk9"/>
-                            <constraint firstAttribute="trailing" secondItem="aq0-Qr-Ezw" secondAttribute="trailing" id="Ovm-C5-UMF"/>
-                            <constraint firstItem="c86-3S-O3s" firstAttribute="top" secondItem="aq0-Qr-Ezw" secondAttribute="bottom" constant="56" id="Ox1-Gl-WWS"/>
-                            <constraint firstItem="6k0-MB-ONt" firstAttribute="trailing" secondItem="CjA-W4-Ecj" secondAttribute="trailingMargin" id="VJz-S8-sWE"/>
+                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="top" secondItem="Jaa-Oy-xNy" secondAttribute="bottom" constant="18" id="T1z-sm-9va"/>
                             <constraint firstItem="c86-3S-O3s" firstAttribute="leading" secondItem="CjA-W4-Ecj" secondAttribute="leading" id="VgO-vK-efx"/>
                             <constraint firstItem="Zk5-Zf-OdU" firstAttribute="top" secondItem="c86-3S-O3s" secondAttribute="bottom" constant="7" id="YbG-eB-dbC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zk5-Zf-OdU" secondAttribute="trailing" constant="43" id="gvV-Lb-qSC"/>
-                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="top" secondItem="Jaa-Oy-xNy" secondAttribute="bottom" constant="18" id="hoF-jv-c4X"/>
+                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="centerX" secondItem="6k0-MB-ONt" secondAttribute="centerX" id="ivV-cx-pAm"/>
+                            <constraint firstItem="aq0-Qr-Ezw" firstAttribute="leading" secondItem="c86-3S-O3s" secondAttribute="leading" id="izc-uC-eD1"/>
                             <constraint firstAttribute="trailing" secondItem="c86-3S-O3s" secondAttribute="trailing" id="m6v-cd-0jV"/>
-                            <constraint firstItem="6k0-MB-ONt" firstAttribute="top" secondItem="aq0-Qr-Ezw" secondAttribute="bottom" constant="30" id="nX7-1e-a4b"/>
                             <constraint firstItem="T9J-Hv-tjX" firstAttribute="top" secondItem="Zk5-Zf-OdU" secondAttribute="bottom" constant="53" id="xth-6j-Ysh"/>
                         </constraints>
                     </view>
@@ -242,12 +252,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-8m-z59">
+                                <rect key="frame" x="0.0" y="264" width="375" height="345"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">1. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do        2. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim          3. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure                               4. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                                         5. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-ME-0du">
+                                <rect key="frame" x="16" y="617" width="63" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="sLw-gG-ByB"/>
                                 </constraints>
@@ -257,6 +269,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAR-zs-Ev1">
+                                <rect key="frame" x="304" y="592" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="JYG-Ei-LKi"/>
                                     <constraint firstAttribute="height" constant="55" id="v1q-4Y-4dm"/>
@@ -267,6 +280,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8u-Fl-nlK">
+                                <rect key="frame" x="16" y="20" width="231" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Wib-ic-peq"/>
                                     <constraint firstAttribute="width" constant="231" id="u53-kS-fNn"/>
@@ -276,6 +290,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-9v-yXs">
+                                <rect key="frame" x="255" y="20" width="104" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="8nh-rG-KYv"/>
                                 </constraints>
@@ -286,6 +301,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeatQuestionMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-vW-GFQ">
+                                <rect key="frame" x="90" y="128" width="195" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="FpS-TE-KZS"/>
                                     <constraint firstAttribute="width" constant="195" id="GbE-K7-J0e"/>
@@ -336,6 +352,6 @@
         <image name="rawChickenButton.png" width="1498" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QEZ-ta-1TG"/>
+        <segue reference="75P-l7-kf5"/>
     </inferredMetricsTieBreakers>
 </document>
