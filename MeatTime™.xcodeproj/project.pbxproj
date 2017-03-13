@@ -10,6 +10,8 @@
 		10290C571E63F5D800A374CF /* GrillinButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10290C561E63F5D800A374CF /* GrillinButton.png */; };
 		10290C591E63F97600A374CF /* SmokinButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10290C581E63F97600A374CF /* SmokinButton.png */; };
 		10290C5B1E63FB0000A374CF /* meatTimeInAppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */; };
+		10328D5A1E76418B008DF02A /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328D591E76418B008DF02A /* StopButton.png */; };
+		10328D5C1E764193008DF02A /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328D5B1E764193008DF02A /* StartButton.png */; };
 		10A3BBB41E5C9B040046669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBB31E5C9B040046669A /* AppDelegate.swift */; };
 		10A3BBB61E5C9B040046669A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBB51E5C9B040046669A /* ViewController.swift */; };
 		10A3BBBC1E5C9B050046669A /* MeatTime_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10A3BBBA1E5C9B050046669A /* MeatTime_.xcdatamodeld */; };
@@ -93,6 +95,8 @@
 		10290C561E63F5D800A374CF /* GrillinButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrillinButton.png; path = MEATTIME/GrillinButton.png; sourceTree = "<group>"; };
 		10290C581E63F97600A374CF /* SmokinButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmokinButton.png; sourceTree = "<group>"; };
 		10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meatTimeInAppLogo.png; sourceTree = "<group>"; };
+		10328D591E76418B008DF02A /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopButton.png; sourceTree = "<group>"; };
+		10328D5B1E764193008DF02A /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartButton.png; sourceTree = "<group>"; };
 		10A3BBB01E5C9B030046669A /* MeatTime™.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeatTime™.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A3BBB31E5C9B040046669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A3BBB51E5C9B040046669A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				10290C5A1E63FB0000A374CF /* meatTimeInAppLogo.png */,
 				10AF0CC21E7055D90053AED9 /* chefhatButton.png */,
 				10290C561E63F5D800A374CF /* GrillinButton.png */,
+				10328D591E76418B008DF02A /* StopButton.png */,
+				10328D5B1E764193008DF02A /* StartButton.png */,
 				10AF0CCC1E707D0F0053AED9 /* rawBeefButton.png */,
 				10AF0CCA1E707CC00053AED9 /* rawChickenButton.png */,
 				10AF0CC81E707CB70053AED9 /* RawPorkButton.png */,
@@ -443,6 +449,7 @@
 				10AF0CC31E7055D90053AED9 /* chefhatButton.png in Resources */,
 				10290C5B1E63FB0000A374CF /* meatTimeInAppLogo.png in Resources */,
 				10AF0CC51E7058700053AED9 /* camera-icon.png in Resources */,
+				10328D5A1E76418B008DF02A /* StopButton.png in Resources */,
 				10A3BC2E1E5D4E540046669A /* icon-messages-transcript-32x24@2x.png in Resources */,
 				10A3BC411E5D4E540046669A /* Icon-App-76x76@1x.png in Resources */,
 				10A3BC251E5D4E540046669A /* icon-messages-app-27x20@2x.png in Resources */,
@@ -477,6 +484,7 @@
 				10A3BC361E5D4E540046669A /* Icon-App-29x29@3x.png in Resources */,
 				10A3BC331E5D4E540046669A /* Icon-App-20x20@3x.png in Resources */,
 				10AF0CC71E7058E10053AED9 /* rawChicken.jpg in Resources */,
+				10328D5C1E764193008DF02A /* StartButton.png in Resources */,
 				10A3BC281E5D4E540046669A /* icon-messages-app-iPadAir-74x55@2x.png in Resources */,
 				10A3BC381E5D4E540046669A /* Icon-App-40x40@2x.png in Resources */,
 				D098B2381E70BEBE00AE04A3 /* MeatQuestionMark.png in Resources */,

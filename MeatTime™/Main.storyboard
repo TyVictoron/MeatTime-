@@ -289,13 +289,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-9v-yXs">
-                                <rect key="frame" x="255" y="20" width="104" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="8nh-rG-KYv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Start"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-9v-yXs">
+                                <rect key="frame" x="255" y="44" width="104" height="53"/>
+                                <state key="normal" title="Start" image="StartButton.png"/>
                                 <connections>
                                     <action selector="startTimerButton:" destination="lqK-1v-ZVf" eventType="touchUpInside" id="aWp-gj-xAU"/>
                                 </connections>
@@ -311,19 +307,20 @@
                         <color key="backgroundColor" red="0.91884142160415649" green="0.25355187058448792" blue="0.17157217860221863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="MaT-ME-0du" secondAttribute="bottom" constant="20" id="1PH-Wj-2g6"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="trailing" secondItem="SAR-zs-Ev1" secondAttribute="trailing" id="38I-r7-fVp"/>
                             <constraint firstItem="kIx-vW-GFQ" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" constant="74" id="Bit-mH-OzF"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="leading" secondItem="A8u-Fl-nlK" secondAttribute="trailing" constant="8" symbolic="YES" id="F2V-HN-epn"/>
                             <constraint firstItem="kMu-8m-z59" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leading" id="FAf-0l-m5V"/>
                             <constraint firstItem="MaT-ME-0du" firstAttribute="top" secondItem="kMu-8m-z59" secondAttribute="bottom" constant="8" id="Kur-MJ-mKJ"/>
                             <constraint firstItem="eju-jM-HxQ" firstAttribute="top" secondItem="SAR-zs-Ev1" secondAttribute="bottom" constant="20" id="LB3-7A-ezy"/>
                             <constraint firstAttribute="trailing" secondItem="kMu-8m-z59" secondAttribute="trailing" id="Zb7-gM-X33"/>
-                            <constraint firstItem="S1f-9v-yXs" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="Zk1-IO-mpN"/>
-                            <constraint firstItem="S1f-9v-yXs" firstAttribute="leading" secondItem="A8u-Fl-nlK" secondAttribute="trailing" constant="8" id="bBk-F0-n3N"/>
-                            <constraint firstItem="S1f-9v-yXs" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" id="dCj-5X-QmQ"/>
                             <constraint firstItem="SAR-zs-Ev1" firstAttribute="trailing" secondItem="O3K-Qj-mLy" secondAttribute="trailingMargin" id="j4V-nR-Ujp"/>
                             <constraint firstItem="MaT-ME-0du" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" id="lEi-XF-lte"/>
                             <constraint firstItem="A8u-Fl-nlK" firstAttribute="leading" secondItem="O3K-Qj-mLy" secondAttribute="leadingMargin" id="mxd-sE-NaU"/>
-                            <constraint firstItem="kIx-vW-GFQ" firstAttribute="top" secondItem="S1f-9v-yXs" secondAttribute="bottom" constant="8" id="na4-B5-c6J"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kIx-vW-GFQ" secondAttribute="trailing" constant="74" id="pFs-gi-Kjv"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="centerY" secondItem="A8u-Fl-nlK" secondAttribute="centerY" id="pcP-WO-3P3"/>
+                            <constraint firstItem="S1f-9v-yXs" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" constant="24" id="skC-qV-HSV"/>
+                            <constraint firstItem="kIx-vW-GFQ" firstAttribute="top" secondItem="S1f-9v-yXs" secondAttribute="bottom" constant="31" id="v0v-s5-4Dc"/>
                             <constraint firstItem="kMu-8m-z59" firstAttribute="top" secondItem="kIx-vW-GFQ" secondAttribute="bottom" constant="8" id="wpq-h1-7py"/>
                             <constraint firstItem="A8u-Fl-nlK" firstAttribute="top" secondItem="Gy7-iC-txP" secondAttribute="bottom" id="zg4-GQ-vYq"/>
                         </constraints>
@@ -345,6 +342,7 @@
         <image name="MeatQuestionMark.png" width="195" height="128"/>
         <image name="RawPorkButton.png" width="1057" height="250"/>
         <image name="SmokinButton.png" width="864" height="360"/>
+        <image name="StartButton.png" width="699" height="342"/>
         <image name="camera-icon.png" width="512" height="512"/>
         <image name="chefhatButton.png" width="1536" height="350"/>
         <image name="meatTimeInAppLogo.png" width="720" height="360"/>

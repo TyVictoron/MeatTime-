@@ -33,7 +33,13 @@ class TimerInstructionView: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func startTimerButton(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerInstructionView.update), userInfo: nil, repeats: true)
+        if (timer.isValid == true) {
+            timer.invalidate()
+            startTimerNuttonOutlet.setImage(UIImage(named: "StartButton"), for: .normal)
+        } else {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerInstructionView.update), userInfo: nil, repeats: true)
+            startTimerNuttonOutlet.setImage(UIImage(named: "StopButton"), for: .normal)
+        }
     }
     
     func update() {
