@@ -13,7 +13,7 @@ class MeatLocker: NSObject
     var AnimalMeats : [String] = ["Beef","Chicken","Pork"]
     
     var BeefCuts : [String] = ["General","Ribeye", "Top Sirloin", "Brisket","Flank","New York","T-Bone","Filet Mignon","Chuck","Ribs"]
-    var BeefCutTemps : [String] = ["","140","135","195","155","145","145","140","160"]
+    var BeefCutTemps : [String] = ["","140","135","195","155","145","145","140","160","165"]
     
     var beefInstructionGrilling = "About 20 minutes before grilling, remove the steaks from the refrigerator and let sit, covered, at room temperature. Heat your grill to high. Brush the steaks on both sides with oil and season liberally with salt and pepper. Place the steaks on the grill and cook until golden brown and slightly charred"
     
